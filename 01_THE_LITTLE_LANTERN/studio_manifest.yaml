@@ -1,0 +1,4753 @@
+---
+schema_version: 1
+project:
+  id: 01_THE_LITTLE_LANTERN
+  title: The Little Lantern
+  target_runtime_seconds: 275
+  target_runtime_display: '4:35'
+  aspect_ratio: '16:9'
+  target_resolution:
+    width: 1920
+    height: 1080
+  fps: 24
+production:
+  current_stage: 10B
+  current_stage_name: KLING CALIBRATION TEST 1 PREPARATION
+  next_stage: 10B
+  next_stage_name: '08C KLING ATTEMPT 1 — HUMAN GENERATION / REVIEW'
+  timing_locked: true
+  temporary_voice_script_created: true
+  playable_animatic_created: true
+  stage_7a_authorized: true
+  current_stage_status: attempt_1_prepared_awaiting_human_generation
+  next_action: Human manually performs only authorized 08C Kling Attempt 1 after checking
+    visible settings/cost; STOP for human review.
+  stage_7a_authorized_scope: Temporary audio approved for animatic use; no further
+    generation authorized.
+  stage_7a_complete: true
+  audio_generation_authorized: false
+  temporary_audio_status: complete_for_animatic
+  temporary_audio_manifest: 06_Voiceover/Temp/TEMP_AUDIO_MANIFEST.md
+  temporary_audio_clip_count: 32
+  production_image_generation_approved: false
+  stage_7b_complete: true
+  timing_lock_status: LOCKED v1 — PROVISIONAL PRODUCTION BASELINE
+  production_image_preparation_approved: true
+  production_image_planning_status: prepared_approved
+  new_production_image_compositions: 28
+  production_image_calibration_status: complete_pass
+  production_image_calibration_complete: true
+  production_image_generation_status: complete_pass
+  production_image_generation_approval_scope: Original production images and separate
+    repairs complete; final 55-shot readiness gate PASS. This audit authorizes no
+    further image or video generation.
+  active_batch: '08C_kling_calibration_test_1'
+  approved_production_image_count: 28
+  remaining_production_image_compositions: 0
+  original_production_composition_set_status: complete_pass
+  animation_readiness_status: pass_ready_for_animation_planning_not_started
+  animation_planning_status: v1 COMPLETE / APPROVED FOR CALIBRATION PREPARATION
+  animation_generation_status: NOT STARTED
+  calibration_test_status: '08C / KLING / ATTEMPT 1 PREPARED / AWAITING HUMAN GENERATION'
+  video_generation_tool: NOT SELECTED
+  video_generation_authorized: false
+  human_manual_generation_authorization: '08C Kling Attempt 1 ONLY; no Codex execution
+    or other clips'
+documents:
+  concept:
+    role: concept
+    path: 01_Development/01_CONCEPT.md
+    status: complete
+  story:
+    role: story
+    path: 01_Development/02_STORY.md
+    status: approved
+  script:
+    role: script
+    path: 01_Development/03_SCRIPT.md
+    status: approved
+  character_bible:
+    role: character_bible
+    path: 02_Character_Bible/04_CHARACTER_BIBLE.md
+    status: written_specification_approved
+  visual_style_bible:
+    role: visual_style_bible
+    path: 02_Character_Bible/05_VISUAL_STYLE_BIBLE.md
+    status: approved
+  visual_character_lock:
+    role: visual_character_lock
+    path: 02_Character_Bible/06_VISUAL_CHARACTER_LOCK.md
+    status: approved_locked_v1
+  scene_shot_list:
+    role: scene_shot_list
+    path: 03_Storyboard/07_SCENE_SHOT_LIST.md
+    status: approved
+  environment_bible:
+    role: environment_bible
+    path: 03_Storyboard/08_ENVIRONMENT_BIBLE.md
+    status: approved
+  environment_master_lock:
+    role: environment_master_lock
+    path: 03_Storyboard/09_ENVIRONMENT_MASTER_LOCK.md
+    status: approved_locked_v1
+  storyboard_animatic_map:
+    role: storyboard_animatic_map
+    path: 03_Storyboard/10_STORYBOARD_ANIMATIC_MAP.md
+    status: approved
+  temporary_voice_script:
+    role: temporary_voice_script
+    path: 01_Development/11_TEMP_VOICE_SCRIPT.md
+    status: approved_for_temporary_audio_generation
+    kind: generated_production_planning_document
+    creative_source: 01_Development/03_SCRIPT.md
+    timing_source: 03_Storyboard/07_SCENE_SHOT_LIST.md
+    spoken_segments: 32
+    timing_warning_voice_ids:
+    - VO_NAR_006
+  temporary_audio_manifest:
+    role: temporary_audio_manifest
+    path: 06_Voiceover/Temp/TEMP_AUDIO_MANIFEST.md
+    status: approved_for_animatic_use
+    kind: generated_production_tracking_document
+  animatic_build_notes:
+    role: animatic_build_notes
+    path: '09_Edit/Animatic/v0_1/ANIMATIC_v0_1_BUILD_NOTES.md'
+    status: historical_build_record_for_approved_v0_1
+  production_image_plan:
+    role: production_image_plan
+    path: 03_Storyboard/12_PRODUCTION_IMAGE_PLAN.md
+    status: prepared_approved
+    kind: generated_production_planning_document
+  production_image_prompts:
+    role: production_image_prompts
+    path: 03_Storyboard/13_PRODUCTION_IMAGE_PROMPTS.md
+    status: prepared_approved
+    kind: generated_production_planning_document
+characters:
+  Lumi:
+    primary:
+      path: 02_Character_Bible/References/Lumi/lumi_master_3quarter.jpg
+      role: primary_appearance_authority
+      status: approved_locked_v1
+      sha256: 6570ba7c7d8ef59018e7e1219e099f8fa3e465b20beebd5dd70750f72df90877
+    secondary:
+      path: 02_Character_Bible/References/Lumi/lumi_master_front.jpg
+      role: secondary_frontal_reference
+      status: approved_locked_v1
+      sha256: 1eba1520c81054bac6aad1de5625c757de801f16f60d8ea7755fcd4775ef6fb7
+  Maya:
+    primary:
+      path: 02_Character_Bible/References/Maya/maya_master_3quarter.jpeg
+      role: primary_appearance_identity_authority
+      status: approved_locked_v1
+      sha256: e35dd747fa44ab7e83c187864ad83dc116e676092b4790d176ba5683af4666a0
+    secondary:
+      path: 02_Character_Bible/References/Maya/maya_master_front.jpeg
+      role: secondary_frontal_identity_reference
+      status: approved_locked_v1
+      sha256: 80216545b32bd6c23e7ba1f5d268d5c819830d2b0ae7d60ed066101fe2f41682
+  Scale:
+    canonical:
+      path: 02_Character_Bible/References/Scale/maya_lumi_scale_master.jpeg
+      role: maya_lumi_relative_scale_only
+      status: approved_locked_v1
+      sha256: b4cdce5ab0875b4125e03f4fb7a4dcc2ab79aefe4bc02a4a3c92202f707a9987
+environments:
+- id: ENV_01
+  name: Bellwood aerial
+  path: 04_Images/References/Environments/ENV_01_BELLWOOD_AERIAL_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: 79467d8e4e11a003bbb0847b5713bbbca5eb54fb3a0581a4d6c9d7ac8b5b985a
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_02
+  name: Great Lantern tower
+  path: 04_Images/References/Environments/ENV_02_GREAT_LANTERN_TOWER_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: 1bc88f2b1ba3eae5761c290a28cd0beadacd6042d5941f7f2508677f858732f4
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_03
+  name: Workshop interior
+  path: 04_Images/References/Environments/ENV_03_WORKSHOP_INTERIOR_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: fb8c25ad0c0f6ef04943b19ffcfc6b972e9d7c14a46e44ec3d78d70d9de80c80
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_04
+  name: Forest path daylight
+  path: 04_Images/References/Environments/ENV_04_FOREST_PATH_DAY_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: a8626d4501ee5a4b2b9b27ab0fffb278be7528893260243a66a981d707077d26
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_05
+  name: Forest path storm
+  path: 04_Images/References/Environments/ENV_05_FOREST_PATH_STORM_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: f179b3c5472cd86b58c400d12e86c4472a14abc9922a54443b3713ae0be64a75
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_06
+  name: Village square
+  path: 04_Images/References/Environments/ENV_06_VILLAGE_SQUARE_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: 4b97b6076119aaa35a3f28eaa2797c7586fe2c078f63c3fddacdf2574f7008ad
+  dimensions:
+    width: 1376
+    height: 768
+- id: ENV_07
+  name: Bellwood street night
+  path: 04_Images/References/Environments/ENV_07_BELLWOOD_STREET_NIGHT_MASTER.jpeg
+  role: canonical_environment_authority
+  status: approved_locked_v1
+  sha256: 9017003b329c1b16127f97a7ba7df840ed6e9c6641eebd5bab9191f96944ba73
+  dimensions:
+    width: 1376
+    height: 768
+shots:
+  declared_historical_count: 57
+  canonical_enumerated_count: 55
+  planned_runtime_seconds: 275
+  timing_source: 03_Storyboard/07_SCENE_SHOT_LIST.md
+  classification_source: 03_Storyboard/10_STORYBOARD_ANIMATIC_MAP.md
+  items:
+  - shot_id: 01A
+    start_time: '00:00'
+    start_seconds: 0
+    duration_seconds: 6
+    storyboard_class: D
+    description: Mountains → Bellwood opening
+  - shot_id: 01B
+    start_time: '00:06'
+    start_seconds: 6
+    duration_seconds: 6
+    storyboard_class: M
+    description: Full Bellwood aerial
+  - shot_id: 02A
+    start_time: '00:12'
+    start_seconds: 12
+    duration_seconds: 6
+    storyboard_class: M/D
+    description: Tower from village
+  - shot_id: 02B
+    start_time: '00:18'
+    start_seconds: 18
+    duration_seconds: 7
+    storyboard_class: D/E
+    description: Push toward Great Lantern flame
+  - shot_id: 03A
+    start_time: '00:25'
+    start_seconds: 25
+    duration_seconds: 4
+    storyboard_class: D/E
+    description: Great flame → tiny Lumi flame match cut
+  - shot_id: 03B
+    start_time: '00:29'
+    start_seconds: 29
+    duration_seconds: 7
+    storyboard_class: P
+    description: Lumi alone on right workshop shelf
+  - shot_id: 03C
+    start_time: '00:36'
+    start_seconds: 36
+    duration_seconds: 7
+    storyboard_class: M
+    description: Wide workshop establishing shot
+  - shot_id: 04A
+    start_time: '00:43'
+    start_seconds: 43
+    duration_seconds: 6
+    storyboard_class: P
+    description: Lumi foreground watching larger lanterns
+  - shot_id: 04B
+    start_time: '00:49'
+    start_seconds: 49
+    duration_seconds: 6
+    storyboard_class: D
+    description: Great Lantern through workshop window
+  - shot_id: 04C
+    start_time: '00:55'
+    start_seconds: 55
+    duration_seconds: 5
+    storyboard_class: D/P
+    description: Lumi close-up; flame dips
+  - shot_id: 05A
+    start_time: '01:00'
+    start_seconds: 60
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya enters workshop
+  - shot_id: 05B
+    start_time: '01:05'
+    start_seconds: 65
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya notices Lumi across room
+  - shot_id: 05C
+    start_time: '01:10'
+    start_seconds: 70
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya lifts Lumi
+  - shot_id: 05D
+    start_time: '01:15'
+    start_seconds: 75
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya holding Lumi; emotional two-shot
+  - shot_id: 06A
+    start_time: '01:20'
+    start_seconds: 80
+    duration_seconds: 4
+    storyboard_class: M
+    description: Forest establishing
+  - shot_id: 06B
+    start_time: '01:24'
+    start_seconds: 84
+    duration_seconds: 4
+    storyboard_class: S→P
+    description: Maya walking trail with Lumi
+  - shot_id: 06C
+    start_time: '01:28'
+    start_seconds: 88
+    duration_seconds: 4
+    storyboard_class: S→P
+    description: Maya collecting flowers
+  - shot_id: 06D
+    start_time: '01:32'
+    start_seconds: 92
+    duration_seconds: 2
+    storyboard_class: P
+    description: Lumi swinging from Maya's hand
+  - shot_id: 06E
+    start_time: '01:34'
+    start_seconds: 94
+    duration_seconds: 2
+    storyboard_class: D/E
+    description: Clouds begin gathering
+  - shot_id: 07A
+    start_time: '01:36'
+    start_seconds: 96
+    duration_seconds: 5
+    storyboard_class: D/E
+    description: Wind rises through established forest
+  - shot_id: 07B
+    start_time: '01:41'
+    start_seconds: 101
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya reacts to first rain
+  - shot_id: 07C
+    start_time: '01:46'
+    start_seconds: 106
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya in heavy storm
+  - shot_id: 07D
+    start_time: '01:51'
+    start_seconds: 111
+    duration_seconds: 6
+    storyboard_class: D/P
+    description: Fallen branch blocks path
+  - shot_id: '08A'
+    start_time: '01:57'
+    start_seconds: 117
+    duration_seconds: 5
+    storyboard_class: S/P
+    description: Distant Bellwood through rain
+  - shot_id: '08B'
+    start_time: '02:02'
+    start_seconds: 122
+    duration_seconds: 4
+    storyboard_class: D/E
+    description: Great Lantern goes dark
+  - shot_id: '08C'
+    start_time: '02:06'
+    start_seconds: 126
+    duration_seconds: 4
+    storyboard_class: P
+    description: Maya realises Bellwood disappeared
+  - shot_id: '09A'
+    start_time: '02:10'
+    start_seconds: 130
+    duration_seconds: 5
+    storyboard_class: P/E
+    description: Flame battered by rain/wind
+  - shot_id: '09B'
+    start_time: '02:15'
+    start_seconds: 135
+    duration_seconds: 5
+    storyboard_class: D/E
+    description: Tiny flame almost extinguished
+  - shot_id: '09C'
+    start_time: '02:20'
+    start_seconds: 140
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya cups Lumi with both hands
+  - shot_id: '09D'
+    start_time: '02:25'
+    start_seconds: 145
+    duration_seconds: 4
+    storyboard_class: P
+    description: 'Wet Maya: "Please don''t go out."'
+  - shot_id: 10A
+    start_time: '02:29'
+    start_seconds: 149
+    duration_seconds: 6
+    storyboard_class: D/E
+    description: Lumi's flame stabilises
+  - shot_id: 10B
+    start_time: '02:35'
+    start_seconds: 155
+    duration_seconds: 7
+    storyboard_class: P/E
+    description: Tiny amber pool on wet ground
+  - shot_id: 10C
+    start_time: '02:42'
+    start_seconds: 162
+    duration_seconds: 6
+    storyboard_class: D/P
+    description: Light catches object ahead
+  - shot_id: 11A
+    start_time: '02:48'
+    start_seconds: 168
+    duration_seconds: 5
+    storyboard_class: P
+    description: Lumi reveals carved stone marker
+  - shot_id: 11B
+    start_time: '02:53'
+    start_seconds: 173
+    duration_seconds: 4
+    storyboard_class: S→P
+    description: Maya follows arrow
+  - shot_id: 11C
+    start_time: '02:57'
+    start_seconds: 177
+    duration_seconds: 4
+    storyboard_class: D/P
+    description: Second marker illuminated
+  - shot_id: 11D
+    start_time: '03:01'
+    start_seconds: 181
+    duration_seconds: 4
+    storyboard_class: S→P
+    description: Maya continues through darkness
+  - shot_id: 12A
+    start_time: '03:05'
+    start_seconds: 185
+    duration_seconds: 5
+    storyboard_class: D/P
+    description: Villagers beneath dark tower
+  - shot_id: 12B
+    start_time: '03:10'
+    start_seconds: 190
+    duration_seconds: 4
+    storyboard_class: S→P
+    description: Old Woman scans forest
+  - shot_id: 12C
+    start_time: '03:14'
+    start_seconds: 194
+    duration_seconds: 4
+    storyboard_class: E/D
+    description: Tiny distant flicker
+  - shot_id: 12D
+    start_time: '03:18'
+    start_seconds: 198
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: 'Villagers react: "Look!"'
+  - shot_id: 13A
+    start_time: '03:23'
+    start_seconds: 203
+    duration_seconds: 4
+    storyboard_class: P
+    description: First villager raises lantern
+  - shot_id: 13B
+    start_time: '03:27'
+    start_seconds: 207
+    duration_seconds: 4
+    storyboard_class: D/P
+    description: Several lanterns appear
+  - shot_id: 13C
+    start_time: '03:31'
+    start_seconds: 211
+    duration_seconds: 4
+    storyboard_class: D/E
+    description: Dozens illuminate village edge
+  - shot_id: 13D
+    start_time: '03:35'
+    start_seconds: 215
+    duration_seconds: 4
+    storyboard_class: P/E
+    description: Glowing path toward forest
+  - shot_id: 14A
+    start_time: '03:39'
+    start_seconds: 219
+    duration_seconds: 4
+    storyboard_class: P
+    description: Maya sees path of lights
+  - shot_id: 14B
+    start_time: '03:43'
+    start_seconds: 223
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Maya runs toward Bellwood
+  - shot_id: 14C
+    start_time: '03:48'
+    start_seconds: 228
+    duration_seconds: 5
+    storyboard_class: S→P
+    description: Villagers receive Maya
+  - shot_id: 15A
+    start_time: '03:53'
+    start_seconds: 233
+    duration_seconds: 6
+    storyboard_class: D/E
+    description: Storm clearing over Bellwood
+  - shot_id: 15B
+    start_time: '03:59'
+    start_seconds: 239
+    duration_seconds: 6
+    storyboard_class: D/E
+    description: Great Lantern relit
+  - shot_id: 15C
+    start_time: '04:05'
+    start_seconds: 245
+    duration_seconds: 7
+    storyboard_class: P
+    description: Lumi sees ordinary village lanterns
+  - shot_id: 16A
+    start_time: '04:12'
+    start_seconds: 252
+    duration_seconds: 6
+    storyboard_class: S→P
+    description: Maya walks down wet street with Lumi
+  - shot_id: 16B
+    start_time: '04:18'
+    start_seconds: 258
+    duration_seconds: 6
+    storyboard_class: P/E
+    description: Lumi illuminates next stones
+  - shot_id: 16C
+    start_time: '04:24'
+    start_seconds: 264
+    duration_seconds: 5
+    storyboard_class: D/E
+    description: Camera rises above Bellwood
+  - shot_id: 17A
+    start_time: '04:29'
+    start_seconds: 269
+    duration_seconds: 6
+    storyboard_class: E
+    description: Title/end
+generation_policy:
+  budget_required_before_generative_operations: true
+  initial_attempt_default: 1
+  default_override_requires_explicit_approval: true
+  stop_and_review_after_initial_attempt: true
+  automatic_canonical_overwrite_allowed: false
+  failed_test_assets_separate_from_canonical_authority: true
+  consider_editing_compositing_before_additional_generation: true
+  uncontrolled_retry_loops_allowed: false
+authority:
+  precedence:
+  - Explicit user/ChatGPT decisions govern operational state; preserve historical
+    approved documents until cleanup is approved.
+  - Approved creative documents govern wording; later explicit lock documents supersede
+    earlier planned reference packages and pending lock states.
+  - Use only the listed canonical paths for asset authority; candidate copies confer
+    no authority.
+  - The user-approved Animatic v0.1 and its unchanged 55-shot / 275-second enumerated
+    plan establish LOCKED v1 — PROVISIONAL PRODUCTION BASELINE; preserve shot timing
+    before production imagery.
+  lumi_appearance: 02_Character_Bible/References/Lumi/lumi_master_3quarter.jpg
+  maya_appearance: 02_Character_Bible/References/Maya/maya_master_3quarter.jpeg
+  maya_lumi_relative_scale: 02_Character_Bible/References/Scale/maya_lumi_scale_master.jpeg
+  environments:
+  - 04_Images/References/Environments/ENV_01_BELLWOOD_AERIAL_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_02_GREAT_LANTERN_TOWER_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_03_WORKSHOP_INTERIOR_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_04_FOREST_PATH_DAY_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_05_FOREST_PATH_STORM_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_06_VILLAGE_SQUARE_MASTER.jpeg
+  - 04_Images/References/Environments/ENV_07_BELLWOOD_STREET_NIGHT_MASTER.jpeg
+  creative_wording:
+  - 01_Development/01_CONCEPT.md
+  - 01_Development/02_STORY.md
+  - 01_Development/03_SCRIPT.md
+  temporary_voice_wording: 01_Development/03_SCRIPT.md
+  shot_timing: 03_Storyboard/07_SCENE_SHOT_LIST.md
+  operational_shot_count: 55
+  operational_shot_count_basis: Explicit user decision accepting 55 enumerated shots
+    after read-only audit
+  approved_production_assets:
+    PI_001:
+      path: 04_Images/Approved/PI_001_LUMI_WORKSHOP_SHELF_v1.jpeg
+      scope: Shot 03B production foundation, accepted right-window projecting shelf/ledge;
+        04C derivative and optional 03C use require separate execution approval. Does
+        not override canonical character identity.
+      status: approved_v1
+    PI_006:
+      path: 04_Images/Approved/PI_006_MAYA_LUMI_WORKSHOP_v1.jpeg
+      scope: Approved shot 05D production foundation; accepted minor weathering/construction
+        and facial/hair variations apply to this asset only. Original canonical character
+        references remain authoritative.
+      status: approved_v1
+    PI_011:
+      path: 04_Images/Approved/PI_011_MAYA_LUMI_STORM_TRAIL_v1.jpeg
+      scope: Approved shot 07C production foundation, Maya State 2 / Weather C; accepted
+        foreground visibility and small visible flame. Does not replace canonical
+        character/environment masters or continuity documents.
+      status: approved_v1
+    PI_002:
+      path: 04_Images/Approved/PI_002_LUMI_LANTERN_COMPARISON_v1.jpeg
+      scope: Approved shot 04A production foundation; accepted foreground perspective
+        does not change physical Lumi scale. Canonical Lumi and environment masters
+        remain authoritative.
+      status: approved_v1
+    PI_003:
+      path: 04_Images/Approved/PI_003_MAYA_ENTERS_WORKSHOP_v1.jpeg
+      scope: Approved shot 05A production foundation; Maya may be substantially inside
+        but immediately adjacent to the entrance with readable inward walking action.
+        Does not override canonical character/environment masters or story chronology.
+      status: approved_v1
+    PI_004:
+      path: 04_Images/Approved/PI_004_MAYA_NOTICES_LUMI_v1.jpeg
+      scope: Approved shot 05B production foundation; Maya notices Lumi without touching,
+        lifting or choosing. Accepted prominent extreme-right foreground decorative
+        lantern is not a Lumi scale change. Canonical character references remain
+        authoritative.
+      status: approved_v1
+    PI_005:
+      path: 04_Images/Approved/PI_005_MAYA_LIFTS_LUMI_v1.jpeg
+      scope: Approved shot 05C transitional lift with clear air gap; does not replace
+        subsequent PI_006/05D settled relationship beat or canonical character authority.
+      status: approved_v1
+    PI_007:
+      path: 04_Images/Approved/PI_007_MAYA_LUMI_FOREST_WALK_v1.jpeg
+      scope: Principal dry-forest walking-pair anchor for 06B; secondary continuity
+        evidence only. Canonical identity/scale/environment authorities remain unchanged;
+        do not automatically include in later prompts.
+      status: approved_v1
+    PI_008:
+      path: 04_Images/Approved/PI_008_MAYA_GATHERS_WILDFLOWERS_v1.jpeg
+      scope: Principal 06C wildflower-gathering anchor; intentional approved offscreen
+        Lumi. Secondary continuity evidence only; canonical authorities unchanged;
+        no automatic inclusion in later prompts.
+      status: approved_v1
+    PI_009:
+      path: 04_Images/Approved/PI_009_LUMI_FOREST_CARRY_DETAIL_v1.jpeg
+      scope: 06D carrying-detail foundation and principal future swing-animation anchor;
+        near-vertical pose and subtle daylight flame accepted. Canonical identity
+        and scale authorities unchanged.
+      status: approved_v1
+    PI_010:
+      path: 04_Images/Approved/PI_010_MAYA_FIRST_RAIN_TURN_HOME_v1.jpeg
+      scope: 07B principal first-rain/early State-2 transition anchor; Lumi intentionally
+        offscreen. Do not interpret as full storm. Canonical authorities unchanged.
+      status: approved_v1
+    PI_014:
+      path: 04_Images/Approved/PI_014_LUMI_FLAME_STORM_THREAT_v1.jpeg
+      scope: '09A approved storm-flame foundation; supports later 09B/10A flame-only
+        edits, none currently authorized. Accepted variations do not override canonical
+        authority.'
+      status: approved_v1
+    PI_015:
+      path: 04_Images/Approved/PI_015_MAYA_PROTECTS_LUMI_v1.jpeg
+      scope: '09C two-hand protection foundation; accepted upright flame and same-light
+        reflection; does not replace PI_014 foundation or canonical references.'
+      status: approved_v1
+    PI_013:
+      path: 04_Images/Approved/PI_013_MAYA_LOSES_BELLWOOD_v1.jpeg
+      scope: '08C missing-landmark reaction; preserve approved screen-left obscured
+        sightline and absent village/beacon/Lumi. Secondary continuity evidence; canonical
+        authorities unchanged.'
+      status: approved_v1
+    PI_016:
+      path: 04_Images/Approved/PI_016_MAYA_PLEASE_DONT_GO_OUT_v1.jpeg
+      scope: '09D pleading emotional close-up; Lumi offscreen, State 3, accepted local
+        facial warmth/rain moisture. Does not replace PI_014/PI_015 or canonical authorities.'
+      status: approved_v1
+    PI_012:
+      path: 04_Images/Approved/PI_012_FALLEN_BRANCH_BLOCKS_TRAIL_v1.jpeg
+      scope: 07D obstructed-trail foundation; approved large-limb and adult-passability
+        variations; canonical environment authority unchanged.
+      status: approved_v1
+    PI_017:
+      path: 04_Images/Approved/PI_017_LUMI_SMALL_POOL_OF_LIGHT_v1.jpeg
+      scope: '10B local useful-light foundation: USEFUL, NOT POWERFUL; accepted nearby
+        pool/right-edge placement; does not replace PI_014 or canonical authorities.'
+      status: approved_v1
+    PI_018:
+      path: 04_Images/Approved/PI_018_CARVED_STONE_ARROW_REVEAL_v1.jpeg
+      scope: 11A carved-arrow foundation and Group E marker production continuity
+        anchor; no replacement of higher canonical authorities. Later 10C/11C derivatives
+        require separate authorization.
+      status: approved_v1
+    PI_019:
+      path: 04_Images/Approved/PI_019_MAYA_FOLLOWS_MARKER_HOME_v1.jpeg
+      scope: '11B approved Attempt 2: Maya travels screen-left, marker behind on right
+        with LEFT arrow; secondary continuity evidence, not replacement for PI_018
+        or canonical authorities.'
+      status: approved_v1
+discrepancies:
+- id: SHOT_COUNT_001
+  historical_declared: 57
+  verified_enumerated: 55
+  resolution: Use 55 operationally; do not invent missing shots. Preserve approved
+    historical documents pending controlled cleanup.
+  status: accepted_pending_documentation_cleanup
+- id: CHARACTER_REFERENCE_PLAN_001
+  description: Historical Character Bible PNG reference-package plan is superseded
+    by 06_VISUAL_CHARACTER_LOCK.md and its canonical JPEG package.
+  historical_source: 02_Character_Bible/04_CHARACTER_BIBLE.md
+  authority_source: 02_Character_Bible/06_VISUAL_CHARACTER_LOCK.md
+  status: superseded_pending_documentation_cleanup
+candidate_assets:
+  authoritative: false
+  locations:
+  - path: 02_Character_Bible/Candidates/
+    kind: candidate_test_directory
+    exists: true
+  - path: 04_Images/References/Environments/
+    kind: mixed_directory
+    candidate_pattern: "*_candidate_*.jpeg"
+    exists: true
+    note: Only candidate-pattern files are non-authoritative; listed MASTER files
+      in this directory are canonical.
+  duplicate_note: Each of the 12 canonical masters has a byte-identical candidate/test
+    copy; canonical paths remain authoritative.
+temporary_audio:
+  status: complete_for_animatic
+  manifest: 06_Voiceover/Temp/TEMP_AUDIO_MANIFEST.md
+  clip_count: 32
+  initial_syntheses_this_batch: 31
+  retries_this_batch: 0
+  approved_test_reused: VO_NAR_001
+  narrator_seconds: 79.63814058956916
+  dialogue_seconds: 9.540408163265306
+  total_audio_seconds: 89.17854875283447
+  cast:
+    NARRATOR:
+      voice: Karen
+      requested_rate_wpm: 160
+    MAYA:
+      voice: Samantha
+      requested_rate_wpm: 140
+    LUMI:
+      voice: Moira
+      requested_rate_wpm: 140
+    SHOPKEEPER:
+      voice: Daniel
+      requested_rate_wpm: 140
+    OLD WOMAN:
+      voice: Grandma (English (UK))
+      requested_rate_wpm: 140
+    VILLAGER:
+      voice: Rishi
+      requested_rate_wpm: 140
+  tight_ids: []
+  over_ids:
+  - VO_NAR_006
+animatic:
+  version: '0.1'
+  status: approved_as_production_timing_baseline
+  path: '09_Edit/Animatic/v0_1/THE_LITTLE_LANTERN_ANIMATIC_v0_1.mp4'
+  build_script: '09_Edit/Animatic/v0_1/build_animatic_v0_1.sh'
+  shot_slots: 55
+  runtime_seconds: 275
+  width: 1920
+  height: 1080
+  fps: 24
+  visual_counts:
+    DERIVATIVE: 10
+    MASTER: 4
+    PLACEHOLDER: 31
+    ROUGH COMPOSITE: 9
+    EDIT/EFFECT: 1
+  voice_clips: 32
+  timing_locked: true
+  production_image_generation_approved: false
+  voice_placement_exception:
+    voice_id: VO_NAR_006
+    start_seconds: 77
+    end_seconds: 81.53351473922902
+    crossed_boundary: 05D → 06A
+    boundary_seconds: 80
+    following_voice_id: VO_NAR_007
+    following_start_seconds: 81.83351473922902
+  stage_status: complete_v0_1_approved
+  timing_lock_status: LOCKED v1 — PROVISIONAL PRODUCTION BASELINE
+  production_image_preparation_approved: true
+  review_decision: Accept Animatic v0.1 as-is; no v0.2 required at this stage
+timing_baseline:
+  status: LOCKED v1 — PROVISIONAL PRODUCTION BASELINE
+  version: 1
+  animatic_version: '0.1'
+  shot_count: 55
+  runtime_seconds: 275
+  authority: Explicit human review approval accepting Animatic v0.1 as-is
+  preserve_shot_timing_before_production_imagery: true
+  accepted_voice_placement_exception:
+    voice_id: VO_NAR_006
+    start_seconds: 77
+    end_seconds: 81.53351473922902
+    crossed_boundary: 05D → 06A
+    boundary_seconds: 80
+    following_voice_id: VO_NAR_007
+    following_start_seconds: 81.83351473922902
+  temporary_voice_scope: Approved for animatic purposes only; not final voiceover
+  later_editorial_adjustments:
+    minor_trims_or_extensions_may_be_considered: true
+    triggers:
+    - Final voice replaces temporary voice
+    - Real animation replaces static frames
+    - Music and SFX are added
+    - Final edit rhythm is evaluated
+    invalidate_baseline_only_if_significant_structural_change_required: true
+  stage_8_execution_this_task: false
+production_image_planning:
+  status: prepared_approved
+  plan: 03_Storyboard/12_PRODUCTION_IMAGE_PLAN.md
+  prompts: 03_Storyboard/13_PRODUCTION_IMAGE_PROMPTS.md
+  strategy_counts:
+    MASTER: 4
+    EDIT_EFFECT: 13
+    NEW_PRODUCTION_IMAGE: 28
+    ROUGH_COMPOSITE: 5
+    DERIVE_FROM_PRODUCTION_IMAGE: 4
+    TITLE_GRAPHIC: 1
+  new_production_image_compositions: 28
+  production_image_ids:
+  - PI_001
+  - PI_002
+  - PI_003
+  - PI_004
+  - PI_005
+  - PI_006
+  - PI_007
+  - PI_008
+  - PI_009
+  - PI_010
+  - PI_011
+  - PI_012
+  - PI_013
+  - PI_014
+  - PI_015
+  - PI_016
+  - PI_017
+  - PI_018
+  - PI_019
+  - PI_020
+  - PI_021
+  - PI_022
+  - PI_023
+  - PI_024
+  - PI_025
+  - PI_026
+  - PI_027
+  - PI_028
+  generation_order:
+  - PI_001
+  - PI_002
+  - PI_006
+  - PI_003
+  - PI_004
+  - PI_005
+  - PI_007
+  - PI_008
+  - PI_009
+  - PI_010
+  - PI_011
+  - PI_014
+  - PI_015
+  - PI_013
+  - PI_016
+  - PI_012
+  - PI_017
+  - PI_018
+  - PI_019
+  - PI_020
+  - PI_021
+  - PI_022
+  - PI_023
+  - PI_024
+  - PI_025
+  - PI_028
+  - PI_026
+  - PI_027
+  generation_approved: true
+  tool_selected: Gemini — Nano Banana 2
+  proposed_budget_per_pi:
+    initial_attempts: 1
+    automatic_retries: 0
+  quality_gate: prepared_approved_after_human_review_and_complete_pass_calibration
+  primary_strategy_map:
+  - shot_id: 01A
+    strategy: MASTER
+    sources:
+    - ENV_01
+  - shot_id: 01B
+    strategy: MASTER
+    sources:
+    - ENV_01
+  - shot_id: 02A
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_02
+  - shot_id: 02B
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_02
+  - shot_id: 03A
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_02
+    - 02_Character_Bible/References/Lumi/lumi_master_3quarter.jpg
+  - shot_id: 03B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_001
+  - shot_id: 03C
+    strategy: MASTER
+    sources:
+    - ENV_03
+    - PI_001
+  - shot_id: 04A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_002
+  - shot_id: 04B
+    strategy: ROUGH_COMPOSITE
+    sources:
+    - ENV_03
+    - ENV_02
+  - shot_id: 04C
+    strategy: DERIVE_FROM_PRODUCTION_IMAGE
+    sources:
+    - PI_001
+  - shot_id: 05A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_003
+  - shot_id: 05B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_004
+  - shot_id: 05C
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_005
+  - shot_id: 05D
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_006
+  - shot_id: 06A
+    strategy: MASTER
+    sources:
+    - ENV_04
+  - shot_id: 06B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_007
+  - shot_id: 06C
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_008
+  - shot_id: 06D
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_009
+  - shot_id: 06E
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_04
+  - shot_id: 07A
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_04
+    - ENV_05
+  - shot_id: 07B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_010
+  - shot_id: 07C
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_011
+  - shot_id: 07D
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_012
+  - shot_id: '08A'
+    strategy: ROUGH_COMPOSITE
+    sources:
+    - ENV_01
+    - ENV_05
+  - shot_id: '08B'
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_01
+    - ENV_02
+    - ENV_05
+  - shot_id: '08C'
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_013
+  - shot_id: '09A'
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_014
+  - shot_id: '09B'
+    strategy: EDIT_EFFECT
+    sources:
+    - PI_014
+  - shot_id: '09C'
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_015
+  - shot_id: '09D'
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_016
+  - shot_id: 10A
+    strategy: EDIT_EFFECT
+    sources:
+    - PI_014
+  - shot_id: 10B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_017
+  - shot_id: 10C
+    strategy: DERIVE_FROM_PRODUCTION_IMAGE
+    sources:
+    - PI_018
+  - shot_id: 11A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_018
+  - shot_id: 11B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_019
+  - shot_id: 11C
+    strategy: DERIVE_FROM_PRODUCTION_IMAGE
+    sources:
+    - PI_018
+    - ENV_05
+  - shot_id: 11D
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_020
+  - shot_id: 12A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_021
+  - shot_id: 12B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_022
+  - shot_id: 12C
+    strategy: EDIT_EFFECT
+    sources:
+    - PI_021
+    - ENV_05
+  - shot_id: 12D
+    strategy: DERIVE_FROM_PRODUCTION_IMAGE
+    sources:
+    - PI_021
+  - shot_id: 13A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_023
+  - shot_id: 13B
+    strategy: ROUGH_COMPOSITE
+    sources:
+    - PI_021
+    - PI_023
+    - ENV_06
+  - shot_id: 13C
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_01
+    - ENV_06
+    - PI_021
+  - shot_id: 13D
+    strategy: ROUGH_COMPOSITE
+    sources:
+    - ENV_01
+    - ENV_06
+    - PI_021
+    - PI_023
+  - shot_id: 14A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_024
+  - shot_id: 14B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_025
+  - shot_id: 14C
+    strategy: ROUGH_COMPOSITE
+    sources:
+    - PI_025
+    - PI_021
+    - PI_023
+    - ENV_06
+  - shot_id: 15A
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_01
+  - shot_id: 15B
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_02
+  - shot_id: 15C
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_026
+  - shot_id: 16A
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_027
+  - shot_id: 16B
+    strategy: NEW_PRODUCTION_IMAGE
+    sources:
+    - PI_028
+  - shot_id: 16C
+    strategy: EDIT_EFFECT
+    sources:
+    - ENV_07
+    - ENV_01
+  - shot_id: 17A
+    strategy: TITLE_GRAPHIC
+    sources: []
+  generation_approval_scope: Approved to continue under individual image review gates
+    and explicit per-operation budgets; not approval of every remaining image.
+  implementation_overrides:
+    13D:
+      escalation_id: 13D_METHOD_ESCALATION_001
+      original_strategy: ROUGH_COMPOSITE
+      current_strategy: METHOD_ESCALATED_GENERATED_SHOT
+      separate_accounting: true
+    14C:
+      escalation_id: 14C_METHOD_ESCALATION_001
+      original_strategy: ROUGH_COMPOSITE
+      current_strategy: METHOD_ESCALATED_GENERATED_SHOT
+      method: CONTROLLED FULL-SHOT GENERATION
+      separate_accounting: true
+  original_planned_composition_set_status: COMPLETE / PASS
+  coverage_and_animation_readiness_status: NOT AUDITED / NOT READY FOR ANIMATION
+production_images:
+  PI_001:
+    id: PI_001
+    status: approved_v1
+    status_display: APPROVED v1
+    registered: true
+    primary_shot: 03B
+    supporting_derivative_shots:
+    - 04C
+    optional_supporting_shots:
+    - 03C
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 2
+    attempt_history:
+    - attempt: 1
+      result: FAIL
+      reason: subject/composition hierarchy
+      detail: The workshop became the primary subject and canonical Lumi was not clearly
+        identifiable.
+    - attempt: 2
+      result: PASS
+    approval_authority: Explicit human review approving attempt 2 as v1; no regeneration.
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_001_LUMI_WORKSHOP_SHELF_v1.jpeg
+      role: approved_production_image_foundation_for_03B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 662565
+      sha256: 6045c282907f82787517b8e35f9eadefc838a1988d0a6d9fe5ab17b0769b46c4
+    accepted_continuity_variation:
+      description: The supporting surface beside the right-side window reads somewhat
+        more like a projecting wooden shelf/ledge than the originally planned lower
+        wall display shelf. This variation is APPROVED and must not trigger regeneration.
+      status: approved
+      must_not_trigger_regeneration: true
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    canonical_reference_authority_note: This production asset governs approved shot
+      03B and its accepted ledge variation; original Lumi character and workshop masters
+      retain their appearance/environment authority.
+  PI_006:
+    id: PI_006
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 05D
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - Maya identity
+    - Maya approximate age
+    - approved Maya costume
+    - dry / clean pre-storm continuity
+    - Lumi identity
+    - Lumi remains small handheld lantern
+    - Maya/Lumi relative scale
+    - tiny restrained amber flame
+    - no Lumi face or anthropomorphism
+    - plausible hand anatomy
+    - plausible grip on Lumi handle
+    - physically believable Maya/Lumi contact
+    - relationship beat reads clearly
+    - Maya looks toward Lumi rather than viewer
+    - workshop remains recognisable and secondary
+    - composition hierarchy
+    - cinematic storybook style
+    - usable 16:9 composition
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_006_MAYA_LUMI_WORKSHOP_v1.jpeg
+      role: approved_production_image_foundation_for_05D
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 672667
+      sha256: 1f5fed640f59ee757cc322ecbbe2053a128b002342189a00ef879e28949c057d
+    accepted_minor_variations:
+    - description: Lumi's fine scratches/dent/weathering are less pronounced than
+        in the canonical character reference.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Lumi appears slightly cleaner/more regular in construction.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Small generative variation in Maya's facial/hair details is acceptable
+        provided overall identity remains consistent.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Accepted variations are specific to this production
+      asset and do not override canonical Maya/Lumi character or scale references;
+      those remain authoritative for subsequent production images.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    calibration_observation: Gemini Nano Banana 2 successfully preserved a usable
+      combination of Maya identity, Lumi identity, relative scale, physical interaction
+      and workshop continuity when references were given explicit authority roles
+      and the character relationship was given composition priority over the environment.
+      This is evidence for the production workflow, not permission to remove individual-image
+      review gates.
+  PI_011:
+    id: PI_011
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 07C
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - Maya identity preserved
+    - Maya approximately correct age
+    - Maya costume preserved
+    - State-2 wetness reads correctly
+    - no premature State-3 exhaustion/mud treatment
+    - Lumi identity preserved
+    - Lumi remains small handheld lantern
+    - Maya/Lumi relative scale remains plausible
+    - Lumi flame remains small and restrained
+    - no magical illumination
+    - plausible handle grip/contact
+    - no major hand/anatomy failure
+    - canonical evergreen mountain forest retained
+    - full storm clearly communicated
+    - visibility ahead reduced by rain/mist
+    - cold storm lighting retained
+    - Lumi provides only small local warm contrast
+    - Maya remains readable
+    - Lumi remains readable
+    - worried/navigation story beat reads correctly
+    - no premature 09C protective-hands climax
+    - cinematic 3D storybook style retained
+    - composition usable for production
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_011_MAYA_LUMI_STORM_TRAIL_v1.jpeg
+      role: approved_production_image_foundation_for_07C
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 783704
+      sha256: 29696853b92a890bcc26e039bc00a194e1939e6d4faac5c02688063fd8c38538
+    accepted_minor_variations:
+    - description: The immediate foreground trail remains reasonably visible, while
+        rain/mist increasingly obscure the route deeper into the frame.
+      acceptance_reason: The shot still communicates deteriorating trail visibility
+        during the full storm.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Lumi's flame remains clearly visible despite the rain.
+      acceptance_reason: The flame is still small and local and does not produce magical
+        or forest-wide illumination.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Accepted visibility/flame variations apply
+      to this approved production asset only. Canonical character/environment references
+      and continuity documents remain authoritative for later production images.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+  PI_002:
+    id: PI_002
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 04A
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Lumi identity preserved
+    - Lumi construction/proportions preserved
+    - Lumi remains a small handheld lantern
+    - accepted PI_001 right-window shelf/ledge continuity preserved
+    - larger/brighter neighbouring lantern provides clear comparison
+    - insecurity story beat reads without anthropomorphism
+    - Lumi has no face
+    - Lumi flame remains tiny and natural
+    - no magical escalation
+    - dry pre-storm continuity preserved
+    - workshop identity/geography strongly preserved
+    - evening lighting continuity preserved
+    - cinematic 3D storybook style preserved
+    - safe landscape composition
+    - no people
+    - no duplicate Lumi
+    - no modern objects
+    - no generated text
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_002_LUMI_LANTERN_COMPARISON_v1.jpeg
+      role: approved_production_image_foundation_for_04A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 680883
+      sha256: 0acc19c7f6eb417cc595f929f7e8dabc67e21515a6fb56b1a7504592eb7fc5af
+    accepted_minor_variations:
+    - description: Foreground perspective makes Lumi appear larger in-frame than some
+        background lanterns.
+      acceptance_reason: Accepted as camera perspective; does not represent a physical-scale
+        continuity change.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor variation in fine scratches, tarnish, dent visibility, background
+        lantern details and small workshop props.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Lumi remains authoritative; accepted
+      perspective and minor-detail variation do not replace character/environment
+      masters or change physical scale.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+  PI_003:
+    id: PI_003
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 05A
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity preserved
+    - Maya approximately ten years old
+    - approved Maya costume preserved
+    - dry / clean State-1 continuity
+    - canonical workshop identity strongly preserved
+    - entrance remains on the left
+    - Maya reads as arriving / entering the workshop
+    - walking pose and body orientation support the action
+    - curious, calm expression
+    - no premature Lumi discovery
+    - no Lumi lifting
+    - no Lumi choosing
+    - no featured Lumi interaction
+    - shopkeeper is appropriately secondary
+    - shopkeeper broadly matches approved supporting-character design
+    - warm workshop lighting continuity preserved
+    - cinematic 3D storybook style preserved
+    - plausible anatomy and ground contact
+    - usable 16:9 composition
+    - no duplicate Maya
+    - no modern objects
+    - no generated text
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_003_MAYA_ENTERS_WORKSHOP_v1.jpeg
+      role: approved_production_image_foundation_for_05A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 731406
+      sha256: dfbbbcd459d61a868effdd962bfd40d2fc8b4333fe4168597b2899e7bda59fd3
+    accepted_minor_variations:
+    - description: Maya is already substantially inside the doorway rather than being
+        captured literally crossing the threshold.
+      acceptance_reason: She remains immediately adjacent to the entrance; her walking
+        step and body orientation communicate movement into the room; the shot reads
+        as arriving / entering and no later story beat is prematurely depicted.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor background prop, lantern, hair-strand and material variations
+        are accepted where they do not break continuity.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Accepted entrance-position and minor-detail
+      variations apply to this production asset; canonical Maya/workshop references
+      and approved story chronology retain authority.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+  PI_004:
+    id: PI_004
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 05B
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity preserved
+    - Maya approximately ten years old
+    - approved Maya costume preserved
+    - dry / clean State-1 continuity
+    - Maya eyeline clearly directed toward Lumi, not the viewer
+    - gentle curiosity
+    - canonical Lumi identity and small handheld scale preserved
+    - Lumi stationary on established right-window ledge
+    - believable Maya/Lumi relative scale
+    - clear physical separation; no touching, lifting or choosing
+    - correct 05B chronology, not 05C or 05D
+    - larger/brighter lantern comparison
+    - tiny natural Lumi flame; no magical attraction or illumination
+    - workshop identity/geography and eyeline composition preserved
+    - warm workshop / dusk lighting continuity
+    - cinematic 3D storybook style
+    - plausible anatomy
+    - no duplicate Maya or Lumi, modern objects or generated text
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_004_MAYA_NOTICES_LUMI_v1.jpeg
+      role: approved_production_image_foundation_for_05B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 715885
+      sha256: 36ce03564f44d3bd32a8a2c3df864e6c95a7c6892a5bb41f32df8f6076ed5ee7
+    accepted_minor_variations:
+    - description: A large decorative lantern occupies the extreme right foreground
+        and is visually prominent.
+      acceptance_reason: It reinforces the story idea that Maya's attention passes
+        beyond larger/brighter/more decorative lanterns and settles on little Lumi.
+        It must not be interpreted as a scale change for Lumi.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor scratches, tarnish, wood grain, cloth folds, hair strands,
+        background lantern details and small workshop prop variation remain accepted
+        where continuity is preserved.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical character references remain authoritative.
+      The accepted foreground decorative lantern and minor-detail tolerances do not
+      change Lumi physical scale or override character identity.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+  PI_005:
+    id: PI_005
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 05C
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 2
+    attempt_history:
+    - attempt: 1
+      result: FAIL
+      reason: Lumi redesign + inadequate lift clearance
+      detail: Lumi became ornate/faceted with decorative arched glass rather than
+        canonical simple rectangular construction. Transitional lifting and weight
+        transfer were insufficiently readable; Lumi appeared at/resting immediately
+        over the surface.
+    - attempt: 2
+      result: PASS
+    approval_authority: Explicit human review approving attempt 2 as v1; no further
+      generation justified.
+    approval_basis:
+    - Maya identity, approximate ten-year age and costume preserved
+    - State-1 dry/clean continuity
+    - Maya eyeline toward Lumi; gentle curiosity/care
+    - canonical simple rectangular Lumi design and glass construction restored
+    - ventilation holes, curved handle and pedestal/base relationship preserved
+    - small handheld Lumi and believable relative scale
+    - tiny natural amber flame without magical illumination
+    - one Maya, one Lumi and one coherent gripping hand
+    - sufficiently plausible fingers/thumb and wrist
+    - connected handle and readable hand/handle contact
+    - weight supported through handle; natural gravity and approximately upright lantern
+    - complete base visible with clear air gap above wooden ledge
+    - no simultaneous resting/hanging contradiction
+    - clear 05C lifting/picking-up action
+    - workshop identity, warm workshop/dusk lighting and cinematic 3D storybook style
+    - usable 16:9 composition
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_005_MAYA_LIFTS_LUMI_v1.jpeg
+      role: approved_production_image_foundation_for_05C
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 748085
+      sha256: 45ecfd6ab5247ade59e3a7be59b3f2ad4be3a63224e2fce3fa9089a660f30a6d
+    accepted_minor_variations:
+    - description: Small differences in Lumi scratch/tarnish visibility
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Slightly cleaner Lumi surface than some canonical views
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor fine-detail construction variation where canonical rectangular
+        identity remains recognisable
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor Maya hair-strand/facial variation
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor workshop prop differences
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor cloth-fold differences
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical references remain authoritative.
+      Identity, scale, physical interaction and story action outrank scratch-level
+      detail.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_action_distinction:
+      PI_005: 'TRANSITIONAL PHYSICAL ACTION: Maya has just lifted Lumi from the display
+        position. Raised gripping arm, suspended lantern and visible lift clearance
+        preserve 05C despite gentle expression. Do not regenerate merely to neutralise
+        her expression.'
+      PI_006: 'Subsequent SETTLED RELATIONSHIP / CHOICE BEAT: "I like this one."'
+    failed_attempt_handling:
+      attempt_1: Failure retained from human review; no PI_005 rejected attempt file
+        identified in project. Rejected file is not required to register approved
+        attempt 2.
+      appropriate_rejected_location: 04_Images/Rejected/
+    production_learning: For high-difficulty hand/object interaction shots, explicitly
+      prioritising canonical object construction, hand/handle contact, gravity, visible
+      support-surface clearance and exact transitional action is more reliable than
+      providing many production-image references. Attempt 2 succeeded after reducing
+      reference overload and describing physical geometry explicitly. Use the minimum
+      sufficient reference package per image; this is not a universal four-reference
+      rule.
+  PI_007:
+    id: PI_007
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 06B
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity, approximate ten-year age and costume preserved
+    - State-1 dry/clean continuity
+    - calm comfortable curious expression; not looking at viewer
+    - clear mid-step walking, believable balance/limb relationships and boot/terrain
+      contact
+    - canonical simple rectangular brass/glass handheld Lumi sufficiently preserved
+    - small Lumi and believable relative scale
+    - plausible right-hand carry, connected handle, natural gravity and exactly one
+      Lumi
+    - tiny restrained natural flame; no magical forest illumination
+    - established cool-climate evergreen forest, narrow rocky/rooted trail, moss,
+      ferns and wildflowers
+    - calm dry pre-storm golden late afternoon
+    - readable walking pair, screen-right travel and useful space ahead
+    - suitable for later walking animation
+    - cinematic 3D storybook style
+    - no premature storm, extra people, modern objects or generated text
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_007_MAYA_LUMI_FOREST_WALK_v1.jpeg
+      role: approved_production_image_foundation_for_06B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 872293
+      sha256: 7685a08dcd11da61b250d93135e4e9b2fb2dd248f1672f2648aa70650a58c946
+    accepted_minor_variations:
+    - description: Minor Lumi scratches/tarnish and fine construction details within
+        canonical identity; individual flowers, small rocks, fern/branch placement,
+        forest textures, cloth folds and loose hair strands.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Stronger warm golden sunlight than some canonical forest master
+        views.
+      acceptance_reason: Consistent with the established golden late-afternoon pre-storm
+        state and same forest identity.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Maya and Lumi masters retain identity
+      authority; scale master retains relative-scale authority; environment masters
+      retain geography authority. PI_007 is secondary production evidence only.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_function: 'Principal dry-forest walking-pair anchor for 06B: NORMALITY BEFORE
+      DISRUPTION. Establishes travelling pair, dry State 1, calm forest, trail geography,
+      pre-storm lighting and natural carrying relationship. Later storm images must
+      retain recognisable environmental identity.'
+    continuity_anchor:
+      role: secondary_production_continuity_evidence
+      uses:
+      - Maya dry forest appearance
+      - Maya/Lumi carrying relationship
+      - walking scale
+      - pre-storm lighting
+      - character integration into forest
+      - trail/character spatial relationship
+      automatic_reference_inclusion: false
+      reference_selection: Use only when helpful within a minimum sufficient package.
+  PI_008:
+    id: PI_008
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 06C
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity sufficiently preserved; approximately ten years old;
+      approved costume
+    - State-1 dry/clean continuity
+    - calm interested focused expression; eyeline toward flower
+    - immediately readable gathering action and credible kneeling/reaching pose
+    - plausible visible hand/wrist and believable flower/stem contact; no obvious
+      extra/fused anatomy
+    - Lumi intentionally outside approved framing; no duplicate or invented placement
+    - established evergreen forest and narrow rocky/rooted trail
+    - naturally integrated right-side wildflower patch
+    - calm dry pre-storm conditions and golden-afternoon continuity with PI_007
+    - Maya/action dominate composition
+    - cinematic 3D storybook style; useful for later subtle motion
+    - no premature storm, extra people, modern objects, text or logos
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_008_MAYA_GATHERS_WILDFLOWERS_v1.jpeg
+      role: approved_production_image_foundation_for_06C
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 859684
+      sha256: f3a31cf04bfa6d5eb2c7ce01be61f9a233e274809468c4b0ed1493009cbc6024
+    accepted_minor_variations:
+    - description: Minor hair strands and cloth folds
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Individual flower colour/species and placement
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Small rocks, ferns/branches and forest textures
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Subtle lighting differences within established golden-afternoon
+        state
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Maya and Lumi masters retain identity
+      authority even though Lumi is offscreen; scale master retains relative-scale
+      authority; ENV_04 retains geography authority. PI_007 and PI_008 are secondary
+      production continuity evidence only.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_function: Principal wildflower-gathering production anchor for 06C, a focused
+      activity beat between 06B walking with Lumi and 06D Lumi swinging. Lumi omission
+      is intentional and approved, not a continuity error; do not regenerate to include
+      Lumi.
+    continuity_anchor:
+      role: secondary_production_continuity_evidence
+      uses:
+      - Maya dry forest appearance
+      - flower patch character
+      - Maya integration into dry forest
+      - golden-afternoon lighting
+      - 06C body/action continuity
+      automatic_reference_inclusion: false
+      reference_selection: Use minimum sufficient references.
+    continuity_with_PI_007:
+    - Same evergreen mountain-forest identity
+    - Same narrow natural trail character
+    - Same rocks/roots/moss/fern vocabulary
+    - Same calm pre-storm state
+    - Compatible golden-afternoon lighting
+    - Compatible dry-state Maya
+    - Compatible cinematic storybook style; PI_007 remains principal walking-pair
+      anchor
+  PI_009:
+    id: PI_009
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 06D
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - Lumi primary subject; canonical simple rectangular brass/glass identity sufficiently
+      preserved
+    - ventilation chamber, curved handle and pedestal base preserved
+    - small handheld scale with child hand/sleeve cues
+    - exactly one Lumi; complete handle/body/base visible
+    - one coherent child hand; plausible fingers/thumb/wrist and secure grip
+    - intact connected handle and physically believable contact
+    - natural gravity; lantern beneath hand approximately vertical
+    - no extreme swing; excellent clearance without ground/vegetation/body contact
+    - dry clean State-1 mustard sleeve
+    - established dry evergreen forest, calm pre-storm golden late afternoon
+    - cinematic 3D storybook style; strong image-to-video suitability
+    - no premature storm, duplicate lantern, extra people, modern objects, text or
+      logos
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_009_LUMI_FOREST_CARRY_DETAIL_v1.jpeg
+      role: approved_production_image_foundation_for_06D
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 687973
+      sha256: c2208367479c10e492b4048ae34abc91c5cfa4e8832d7f9b998ed04049376f39
+    accepted_minor_variations:
+    - description: Minor Lumi scratch/tarnish, brass colour and fine construction
+        details within canonical identity
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Subtle flame visibility in daylight
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Background rocks, ferns/vegetation and small flowers
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Partial Maya framing and cloth folds
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Lumi remains identity authority;
+      scale master remains scale authority; PI_007 remains secondary outdoor carrying-continuity
+      evidence.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    flame_note:
+      status: accepted
+      description: Flame extremely subtle and potentially difficult to read in still;
+        do not regenerate solely to strengthen it. Daylight reduces visual dominance;
+        principal function is carrying physics and swing-ready geometry.
+      later_evaluation: During later animation/compositing evaluate tiny natural flame
+        readability. Any enhancement must stay small, natural, local, non-magical
+        and preserve Lumi construction. No enhancement performed now.
+    story_function: 06D — LUMI SWINGS FROM MAYA’S HAND. Still intentionally neutral/near-vertical;
+      actual restrained swing is for later animation. Absence of dramatic swing is
+      not failure.
+    animation_anchor:
+      role: principal_future_animation_anchor_for_06D
+      desired_motion:
+      - Natural travelling carrying hand
+      - Small pendulum swing
+      - Structurally connected handle
+      - Gravity maintained
+      - Restrained swing amplitude
+      - Optional tiny secondary flame response
+      - Subtle background motion
+      - No magical light effects
+      preserve: Excellent clear space around Lumi
+      animation_performed: false
+  PI_010:
+    id: PI_010
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 07B
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - Maya identity consistent; approximately ten years old
+    - approved mustard coat, cream sweater, dark teal trousers and forest-green satchel
+      preserved
+    - early State-2 wetness; initial damp hair rather than soaked hair; restrained
+      coat rain spotting
+    - not heavily muddy or exhausted
+    - alertness and beginning concern; screen-left/homeward gaze rather than viewer
+    - head/shoulder/body reaction and beginning homeward turn
+    - Lumi intentionally offscreen; no premature protection or near-extinction beat
+    - same evergreen mountain forest; trail clearly readable
+    - rain substantially lighter than PI_011; restrained wind without violent gale
+    - lighting bridges golden dry sequence and cold full storm; residual sun with
+      incoming cool light
+    - no lightning-dominated/full-storm treatment
+    - suitable for later subtle motion; consistent cinematic 3D storybook style
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_010_MAYA_FIRST_RAIN_TURN_HOME_v1.jpeg
+      role: approved_production_image_foundation_for_07B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 888489
+      sha256: 6dd2965cd02c4a24b31494344fc2ff6dd419aa870a502f6753759ae6a78a55d9
+    accepted_minor_variations:
+    - description: Concern slightly stronger than minimum target but appropriate for
+        first-rain reaction, below later fear/exhaustion.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Exact raindrops, damp strands, coat wetness pattern, flowers, rocks,
+        ferns, branches, forest textures and balance of residual warm sunlight/incoming
+        cool light.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical character, scale and environment
+      references remain authoritative; PI_010 is first-rain production continuity
+      evidence, not full storm.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Maya senses the first rain and turns toward home.
+    weather_continuity:
+      role: principal_FIRST_RAIN_EARLY_STATE_2_transition_anchor
+      before: 'PI_007–PI_009: CALM / DRY / GOLDEN AFTERNOON'
+      current: 'PI_010: FIRST RAIN / EARLY STATE 2 / WEATHER TURNING'
+      after: 'PI_011: FULL STORM / HEAVY RAIN / TRAIL BECOMING DIFFICULT TO READ'
+      restriction: Do not reinterpret PI_010 as full-storm imagery in later prompts.
+    file_registration_note: Already present at canonical path; no move performed.
+      Expected downloaded basename Gemini_Generated_Image_vau3wjvau3wjvau3.jpeg not
+      located in project/Downloads. Hash measured before and after registration; no
+      claim of earlier rename provenance.
+  PI_014:
+    id: PI_014
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: '09A'
+    supporting_derivative_shots:
+    - '09B'
+    - 10A
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Lumi identity and rectangular aged-brass/glass construction retained
+    - extreme close-up composition
+    - State-3 exterior wetness; believable droplets/water trails
+    - exactly one visible tiny natural amber flame, clearly wind-bent and threatened
+      but substantially alive
+    - not 09B near-extinction or 10A stabilisation
+    - full cold storm; evergreen storm-forest continuity
+    - no magical illumination, Maya, hands or anthropomorphism
+    - structural camera/enclosure foundation for later 09B and 10A flame-only edits
+    - usable landscape composition for final 16:9 framing
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_014_LUMI_FLAME_STORM_THREAT_v1.jpeg
+      role: approved_production_image_foundation_for_09A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 735476
+      sha256: a7792d1ff43458307fadb93fdd4315bfd6d169dac7c844fa99cb7d6f7449417b
+    accepted_minor_variations:
+    - description: Flame somewhat more visually prominent due to extreme close-up
+        and wet-glass reflections, but physically small, natural and local relative
+        to enclosure.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Background forest more readable than strongest reduced-visibility
+        interpretation, but secondary, cold, wet and storm-appropriate.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Lumi and environment references
+      retain authority. Accepted prominence and background visibility variations are
+      shot-specific and must not trigger regeneration.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Lumi's tiny flame is threatened in the storm.
+    derivative_status:
+      foundation_for:
+      - '09B'
+      - 10A
+      scope: Structural/camera/enclosure foundation for later flame-only edits
+      created: false
+      generation_or_editing_authorized: false
+    file_registration_note: Already at canonical destination; no move, rename or byte
+      modification performed. Expected SHA-256 verified before and after registration.
+  PI_015:
+    id: PI_015
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: '09C'
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - approximately ten-year-old Maya scale; soaked mustard State-3 costume
+    - face intentionally outside frame; protectiveness through pose
+    - canonical rectangular aged-brass/glass Lumi; coherent enclosure/frame/vents/handle
+    - small handheld Maya/Lumi scale
+    - exactly two coherent hands; plausible fingers/wrists from sleeves
+    - hands outside rigid enclosure; no penetration, crushing, merging or impossible
+      grip
+    - sheltering/protecting rather than ordinary carrying
+    - one actual small vulnerable living flame
+    - '09C differentiated from 09A threatened flame and 09B by protective action;
+      not 10A recovery'
+    - full storm, readable rain/soaked surfaces
+    - predominantly cold light with restrained local amber; no magic
+    - no anthropomorphism or duplicate Lumi
+    - hands/Lumi HERO relationship; usable final 16:9 landscape and cinematic 3D storybook
+      style
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_015_MAYA_PROTECTS_LUMI_v1.jpeg
+      role: approved_production_image_foundation_for_09C
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 566860
+      sha256: 5e8955d6a8181cdaeca851e700cbbc6acdb37ee91b9abb06db89ef4e2cd639f7
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Flame somewhat more upright/visually healthy than absolute weakest
+        interpretation of weak, vulnerable, alive.
+      acceptance_reason: Remains small/local without magical strengthening, relief
+        or completed recovery; protective intervention dominates and leaves room for
+        unmistakable 10A stabilisation.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Small secondary warm appearance through left glass panel.
+      acceptance_reason: Reflection/view-through of same internal light through wet
+        glass; not a second flame, duplicate Lumi or continuity violation.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical identity/scale/environment authorities
+      retained. Accepted flame/reflection variations are specific to PI_015 and do
+      not justify regeneration.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Maya protects Lumi's weak flame with both hands.
+    continuity_role: Approved production foundation for 09C protective action only;
+      not 09A, 09B, 09D or 10A. PI_014 retains its registered structural/camera/enclosure
+      foundation role for 09A/09B/10A.
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+      generation_stopped_after_review: true
+    file_registration_note: Source already at exact canonical path; no move or byte
+      modification. Reviewed source hash verified before/after registration.
+  PI_013:
+    id: PI_013
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: '08C'
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity, coherent face, approximate ten-year age and dark hair
+    - visibly wet separated strands, mustard raincoat, advanced storm wetness without
+      dry reset
+    - restrained worried/searching/newly disoriented expression
+    - offscreen viewer-left gaze, not viewer; head/body support reaction/turn
+    - Lumi completely offscreen, no lantern/flame
+    - no Bellwood, buildings/skyline, Great Lantern, tower/beacon or village/window
+      lights
+    - readable heavy storm and reduced distant visibility
+    - established wet evergreen/mountain trail
+    - cold storm light, readable face without false sun or magic
+    - missing-landmark reaction and substantial screen-left negative space
+    - cinematic 3D storybook style; usable final 16:9 landscape
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_013_MAYA_LOSES_BELLWOOD_v1.jpeg
+      role: approved_production_image_foundation_for_08C
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 638133
+      sha256: 8bd45b16e800ad3054a6c5149bb18bb3f64b6a5c85e6270478e6ddd247b45aeb
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Substantial nearby trees/rocks/ferns remain visible.
+      acceptance_reason: Distant sightline sufficiently obscured; Bellwood/Great Lantern/lights
+        absent; local forest and narrative loss remain readable.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Satchel not prominent as continuity identifier in this crop.
+      acceptance_reason: Reaction prioritises face, eyeline and negative space; does
+        not authorize satchel removal where explicitly required.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Boots and full lower-body mud not assessable in crop.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Secondary production continuity evidence only;
+      does not replace canonical Maya, Lumi, scale or environment authorities.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Maya realises Bellwood has vanished behind the storm.
+    continuity_role: '08C missing-landmark reaction foundation. Preserve 08A distant
+      Bellwood, 08B beacon extinction, 08C searching reaction with Bellwood absent,
+      09A Lumi flame-threat distinction. Screen-left empty/obscured sightline is important
+      narrative information; not a generic storm portrait.'
+    character_state: Advanced STATE 2, per approved 08C specification; no dry reset.
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+      generation_stopped_after_review: true
+    file_registration_note: Approved source already at canonical path; no move or
+      byte modification; exact reviewed hash verified before/after registration.
+  PI_016:
+    id: PI_016
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: '09D'
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - canonical Maya identity, approximate ten-year age, coherent face/skin tone
+    - wet messy canonical hair, mustard coat and visible strap
+    - full State-3 storm wetness
+    - frightened vulnerable quiet plea; natural subtle mid-plea mouth
+    - downward gaze toward offscreen Lumi, not viewer
+    - facial moisture consistent with storm rain, not explicit invented crying
+    - Lumi completely offscreen; no lantern/flame
+    - distinct from 09A threat and 09B near-extinction; continuity from 09C; no premature
+      10A stabilisation
+    - heavy storm, soft established evergreen context
+    - predominantly cold storm light; no magic
+    - facial story close-up, cinematic 3D storybook continuity and usable final 16:9
+      landscape
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_016_MAYA_PLEASE_DONT_GO_OUT_v1.jpeg
+      role: approved_production_image_foundation_for_09D
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 631586
+      sha256: 738c7c5ef512339230e34624c046c448614f9e31671ab6ee8a9d4ec78bbe957f
+      color_space: RGB
+    accepted_minor_variations:
+    - description: More visible warm local facial illumination than strictest weak
+        lower-face amber interpretation.
+      acceptance_reason: Restrained/localised; no magic, scene-wide warmth, Lumi recovery
+        or 10A stabilisation.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Strong vulnerability/emotion with visible facial moisture.
+      acceptance_reason: Moisture remains consistent with heavy rainfall, not explicit
+        invented tears.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical identity/scale/environment authorities
+      retained; accepted lighting/emotion variations specific to approved PI_016.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: The pleading close-up carries emotional stakes.
+    continuity_role: '09D pleading emotional close-up foundation only; not 08C lost/searching,
+      09A threat, 09B near-extinction, 09C protection composition or 10A recovery.
+      PI_014 and PI_015 registrations/roles remain unchanged.'
+    character_state: STATE 3 — full storm wetness.
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+    file_registration_note: Exact approved source already at canonical destination;
+      no move/copy or image-byte modification. Reviewed hash verified before/after
+      registration.
+  PI_012:
+    id: PI_012
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 07D
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - natural fallen branch/limb debris clearly interrupts usable trail
+    - substantial but non-catastrophic scale; believable weight/ground contact/perspective
+    - readable approach and route beyond; narrow natural path
+    - established evergreen mountain forest; full heavy-storm continuity
+    - saturated muddy puddled ground; wet rocks/wood/vegetation
+    - cold storm light
+    - Maya and Lumi intentionally absent; no flame
+    - continues 07C storm; distinct from 08A Bellwood view; no 09-series storytelling
+    - immediate blocked-route narrative; approach/obstruction/route-beyond composition
+    - cinematic 3D storybook environmental language; usable final 16:9 landscape
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_012_FALLEN_BRANCH_BLOCKS_TRAIL_v1.jpeg
+      role: approved_production_image_foundation_for_07D
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 938932
+      sha256: 94379c2c96d70c652112777d6d30eea806c45e27cdf9b88fd992d6964e824f5b
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Large fallen limb with multiple attached/broken offshoots and storm
+        debris rather than a single simple branch.
+      acceptance_reason: Not an entire uprooted tree or catastrophic destruction;
+        surrounding forest intact; plausible and explains obstructed route.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Obstacle not necessarily absolutely impassable to a determined
+        adult.
+      acceptance_reason: Narrative requires Maya familiar route obstructed during
+        severe storm, not an impenetrable wall.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical environment/character/scale authorities
+      unchanged; accepted obstruction variations specific to PI_012.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Show why the familiar trail is obstructed.
+    continuity_role: 07D fallen branch/limb blocks familiar trail; not generic 07C
+      storm scenery, 08A Bellwood view, later Maya reaction or 09-series Lumi/flame
+      beat.
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+    file_registration_note: Source already at canonical destination; exact approved
+      hash checked before/after registration; no image-byte modification or move.
+  PI_017:
+    id: PI_017
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 10B
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - Lumi near right frame edge; ground/light relationship primary
+    - recognisable rectangular aged-brass/glass Lumi, coherent vented top/curved handle;
+      small portable scale against terrain
+    - exactly one small steadier post-10A flame without power increase
+    - nearby wet ground usefully readable; local amber with rapid falloff
+    - natural mud/stones/shallow water; local source-consistent reflections; no self-emissive
+      puddles
+    - Maya intentionally absent
+    - full storm rain/wetness and natural forest trail
+    - cold environmental light dominant; no aura/beam/golden rays/global amber
+    - distinct from 10A stabilisation and 10C clue reveal
+    - small light enough nearby; cinematic 3D storybook style and final 16:9 usability
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_017_LUMI_SMALL_POOL_OF_LIGHT_v1.jpeg
+      role: approved_production_image_foundation_for_10B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 693108
+      sha256: c881cb65c2e2cbc06f06828874d665938dbae15b8c7f33567b1d86e5ee3e95d1
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Ground patch more readable/broad than strictest tiny amber pool
+        interpretation.
+      acceptance_reason: Confined to nearby terrain, no forest illumination, soft
+        rapid falloff, wet mud reflected highlights, no substantial flame/power increase.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Lumi close to right frame boundary.
+      acceptance_reason: Enough source structure visible; prevents hero-object dominance;
+        local light remains primary and source relationship readable.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical character/environment/scale authorities
+      unchanged; accepted pool width and edge placement specific to PI_017.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Demonstrate useful local light instead of greater power.
+    continuity_role: 'USEFUL, NOT POWERFUL. 10B foundation: small stabilised flame
+      makes limited nearby wet terrain readable. Rapid falloff into cold darkness
+      is approved narrative information. Not increased brightness/magic/forest illumination/beam,
+      not 10A stabilisation, 10C object reveal or Maya reaction. PI_014 foundation
+      role unchanged.'
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+      generation_stopped_after_review: true
+    file_registration_note: Exact approved source already at canonical destination;
+      no move/byte modification; expected hash verified before/after registration.
+  PI_018:
+    id: PI_018
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 11A
+    supporting_derivative_shots:
+    - 10C
+    - 11C
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving attempt 1 as v1; no additional
+      generation justified.
+    approval_basis:
+    - weathered grey stone with credible ground contact, moss/weathering integration
+    - one immediately readable LEFT-pointing recessed carved arrow; not painted
+    - no text, modern signage, freestanding modern sign or extra symbols
+    - marker/carving not emissive; external local amber from nearby Lumi
+    - partial right-edge canonical brass/glass Lumi; one small natural flame without
+      power escalation
+    - Maya intentionally absent
+    - active heavy rain, wet evergreen forest/trail, dominant cold light with local
+      marker/Lumi warmth
+    - no aura/beam/supernatural activation
+    - carved arrow provides next direction; marker primary; final 16:9 usability
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_018_CARVED_STONE_ARROW_REVEAL_v1.jpeg
+      role: approved_production_image_foundation_for_11A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 754866
+      sha256: f4e2b92b69710aca1fb4838a71146c225af75a4d57f6755832d67bc71ff615a8
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Relatively clean strongly readable carving.
+      acceptance_reason: Recessed in weathered stone, not paint/modern sign/glow.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Fairly strong local amber on marker right side.
+      acceptance_reason: Visible Lumi explains source, local only, arrow non-emissive,
+        cold dark forest, no power escalation.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Significant right-edge crop of Lumi.
+      acceptance_reason: Enough structure/source and one flame readable; marker remains
+        primary.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Higher canonical character/environment/scale
+      authorities remain unchanged; marker lock is approved production continuity.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Reveal the carved arrow that provides the next useful step.
+    marker_continuity_lock:
+      role: approved_Group_E_production_continuity_anchor
+      properties:
+      - weathered grey rectangular/slightly irregular stone
+      - roughly Maya knee-high story scale per existing source
+      - one deeply recessed LEFT-pointing arrow
+      - physical carving, not paint
+      - natural stone irregularity; wet storm surface
+      - restrained moss/weathering; credible base contact
+      - no text/extra symbols/modern signage/magic/self-emission
+      - ordinary external lantern illumination
+      preserve_in_later_images:
+      - substrate
+      - arrow direction/count
+      - basic carving silhouette
+      - physical non-magical nature
+      not_locked:
+      - incidental microtexture
+      - exact moss placement
+      - scratches
+      - droplet positions
+      authority_scope: Production continuity only; higher canonical authorities unchanged.
+    continuity_role: 11A clear carved-arrow reveal; 10B local usefulness, 10C pre-reveal,
+      11A directional information. Subsequent Group E same-marker appearances preserve
+      approved identity. Not magical activation, power-up, modern signage, rune or
+      Maya reaction.
+    derivative_status:
+      foundation_for:
+      - 10C
+      - 11C
+      created: false
+      generation_or_editing_authorized: false
+    attempt_policy:
+      additional_attempts: 0
+      attempt_2_authorized: false
+      unrelated_generated_image_counted: false
+    source_control_note: Only original Gemini source matching reviewed hash registered.
+      Unrelated non-Gemini generated image excluded from registration, Approved placement
+      and attempt ledger; no unrelated image modified.
+    file_registration_note: Exact source already at canonical destination; no move
+      or byte modification; hash verified before/after registration.
+  PI_019:
+    id: PI_019
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 11B
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 2
+    attempt_history:
+    - attempt: 1
+      result: FAIL
+      reason: directional continuity failure
+      detail: Maya pose/body/stride read screen-right, opposite approved PI_018 LEFT-pointing
+        marker.
+    - attempt: 2
+      result: PASS
+    approval_authority: Explicit human review approving Attempt 2 as v1; no further
+      PI_019 attempts authorized.
+    approval_basis:
+    - canonical Maya identity/ten-year age/face, wet dark hair, mustard coat, green
+      satchel, coherent trousers/boots
+    - State-3 wetness/mud; cautious concern without premature relief or viewer gaze
+    - forward walking screen-right toward screen-left; face/eyes/torso/stride/leading
+      boot agree; open left travel space
+    - grey stone marker behind Maya on right, one recessed LEFT arrow; no glow/text/symbols/modern
+      sign
+    - marker and Maya both point/travel LEFT, correcting Attempt 1
+    - one small right-hand Lumi, credible engaged handle/gravity, no floating/duplicates
+    - one small stable natural flame without power escalation
+    - heavy rain and wet evergreen trail/muddy terrain; cold blue-grey dominates,
+      local amber only
+    - no aura/beam/glowing path/global warmth
+    - home/Bellwood/Great Lantern/destination lights absent
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_019_MAYA_FOLLOWS_MARKER_HOME_v1.jpeg
+      role: approved_production_image_foundation_for_11B
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      aspect_ratio_display: 43:24 approximately 1.792:1
+      final_framing_target: '16:9'
+      file_size_bytes: 719480
+      sha256: f54f232dedea7af502457ebd4fe760012a88068b0bf2932cd453fa0c4e882de8
+      color_space: RGB
+    accepted_minor_variations:
+    - description: Cautious/measured rather than hurried stride.
+      acceptance_reason: Clear travel; following not running; concern appropriate.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Lumi clearly readable against dark forest.
+      acceptance_reason: Small physically carried lantern, tiny flame and restrained
+        local light; no greater power.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor marker contour/texture/moss/micro-wear variation from PI_018.
+      acceptance_reason: Grey stone, coherent knee-high scale, one recessed LEFT arrow
+        and same material/sign type retained.
+      status: accepted
+      must_not_trigger_regeneration: true
+    canonical_reference_authority_note: Canonical Maya/Lumi, scale and environment
+      masters and higher continuity documents remain authoritative; PI_018 marker
+      lock retained.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    story_purpose: Maya follows the marker toward home.
+    directional_continuity_lock:
+      marker_arrow: SCREEN-LEFT
+      Maya_travel: FROM SCREEN-RIGHT TOWARD SCREEN-LEFT
+      marker_position: Behind Maya on SCREEN-RIGHT
+      meaning: Maya understood and passed marker, following its instruction; never
+        describe PI_019 as screen-right travel.
+    continuity_role: Secondary production evidence for leftward post-discovery action,
+      State-3 storm travel, right-hand Lumi, small stable flame, heavy storm and cautious
+      homeward progress. PI_018 remains principal marker appearance anchor.
+    not_locked:
+    - exact stride phase
+    - droplet positions
+    - mud marks
+    - vegetation
+    - lantern swing
+    - stone microtexture
+    attempt_policy:
+      additional_attempts_authorized: 0
+      attempt_3_authorized: false
+      generation_stopped: true
+    file_registration_note: Canonical file already contains exact approved Attempt
+      2 hash; no replacement, move or image-byte modification. Attempt 1 not registered
+      as asset; both attempts counted.
+  PI_020:
+    id: PI_020
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 11D
+    story_purpose: Maya continues through the dark forest one small step at a time,
+      using Lumi's limited light to see only the immediate path ahead.
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving Attempt 1; no additional generation
+      justified.
+    approval_basis: |-
+      - Maya remains recognisably consistent with the canonical character.
+      - Maya reads as approximately ten years old with child proportions.
+      - Approved mustard coat, dark teal trousers, brown boots and
+        forest-green satchel remain recognisable.
+      - State-3 continuity is successful:
+        wet/messy hair,
+        soaked coat,
+        wet/muddy boots,
+        tired but determined body language.
+      - Maya is continuing forward rather than posing.
+      - Rear/three-quarter body orientation clearly supports travel.
+      - Her visible step has believable balance, weight and ground contact.
+      - Her eyeline supports navigation rather than looking toward the viewer.
+
+      - Lumi remains recognisably the established small rectangular
+        brass/glass lantern.
+      - Lumi remains appropriately small and handheld.
+      - Exactly one Lumi is visible.
+      - Handle remains connected and structurally plausible.
+      - Maya's carrying hand and Lumi have believable physical contact.
+      - Gravity is convincing.
+      - Lumi hangs naturally beneath the hand.
+      - Lumi remains approximately upright.
+      - Lumi is visibly integrated into the wet storm environment.
+
+      - Lumi's flame remains tiny, natural and non-magical.
+      - Amber illumination remains LOCAL.
+      - The light reveals only the nearby wet trail / immediate footing.
+      - Most of the forest remains dark and cold.
+      - Lumi does NOT illuminate the entire forest.
+      - No magical beam, giant aura or supernatural power escalation occurs.
+
+      - Forest identity remains consistent with the established mountain
+        evergreen forest.
+      - Narrow wet trail, rocks, roots, ferns and surrounding trees remain
+        appropriate.
+      - Heavy storm/rain atmosphere remains consistent with the required
+        Weather-C state.
+      - No unnecessary stone marker has been inserted.
+      - The image correctly represents continuation AFTER the marker sequence
+        rather than another marker-discovery beat.
+
+      - Composition successfully prioritises:
+        1. Maya continuing,
+        2. Lumi and her small light,
+        3. immediate readable footing,
+        4. surrounding darkness.
+
+      - Wide rear/three-quarter composition provides useful depth toward the
+        route ahead.
+      - Feet, hand, handle and Lumi remain clearly separated.
+      - Image has strong future motion potential for:
+        walking,
+        restrained lantern sway,
+        rainfall,
+        coat/hair movement,
+        tiny flame movement,
+        subtle camera movement.
+
+      - Visual treatment remains consistent with the established stylised
+        cinematic 3D storybook film.
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_020_MAYA_LUMI_CONTINUE_THROUGH_DARKNESS_v1.jpeg
+      role: approved_production_image_foundation_for_11D
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 735053
+      sha256: 884cfcce9ccd050b02cf6e86c1ae927687717a9ba56481859a27c9ae95a585dd
+    accepted_minor_variations:
+    - description: Exact raindrop placement
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Exact mud distribution
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Individual wet hair strands
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Minor Lumi scratches, tarnish and surface details
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Small differences in rocks, roots, ferns and vegetation
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Cloth folds and wetness patterns
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Small atmospheric and mist differences
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Exact shape of the small illuminated patch on the trail
+      status: accepted
+      must_not_trigger_regeneration: true
+    variation_condition: Identity, scale, physical interaction, story action and local-light
+      behaviour remain correct.
+    thematic_continuity_lock:
+      principle: SMALL LIGHT → NEXT VISIBLE STEP → CONTINUE FORWARD
+      meaning: Lumi does not defeat the darkness. Her small light reveals enough immediate
+        path for Maya to take the next step.
+      later_lighting_and_animation_authority: true
+      do_not_enlarge_illumination: true
+    animation_anchor:
+      status: useful_future_motion_source
+      potential_motion:
+      - restrained forward walking
+      - subtle body weight transfer
+      - small physically plausible lantern pendulum movement
+      - rainfall
+      - dripping water
+      - slight wet hair / coat movement
+      - tiny natural flame movement
+      - restrained camera tracking / push
+      critical_constraint: Preserve handle connection, physical gravity and small
+        local illumination.
+      animation_authorized: false
+    canonical_reference_authority_note: Canonical character, scale and environment
+      masters retain authority; previous registered production anchors remain unchanged.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Already at canonical destination; no move or image-byte
+      modification. SHA-256 verified before and after registration.
+  PI_021:
+    id: PI_021
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 12A
+    story_purpose: Establish worried villagers beneath the dark tower and provide
+      reusable crowd plate.
+    supporting_derivative_shots:
+    - 12D
+    supporting_element_uses:
+    - 12C
+    - 13B
+    - 13C
+    - 13D
+    - 14C
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving Attempt 1; no additional generation
+      justified.
+    approval_basis: |-
+      The image successfully establishes the Bellwood side of the rescue
+      sequence before the villagers discover Maya's distant light.
+
+      Approve:
+
+      - worried Bellwood crowd
+      - cold storm-dark atmosphere
+      - heavy Weather-C rain
+      - wet stone square
+      - Great Lantern completely extinguished
+      - tower clearly readable as the village landmark
+      - approximately 20–30 villagers
+      - varied ages and silhouettes
+      - appropriate old-world mountain-village clothing
+      - concerned rather than celebratory expressions
+      - coherent searching/concerned eyelines
+      - several ordinary lanterns present but UNLIT
+      - no rescue-light path
+      - no mass raised-lantern response
+      - no Maya
+      - no Lumi
+      - no homecoming
+      - no celebration
+      - useful foreground/midground/background crowd separation
+      - reusable crowd-plate potential
+      - cinematic 3D storybook continuity
+      - safe landscape framing
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_021_WORRIED_VILLAGERS_DARK_TOWER_v1.jpeg
+      role: approved_production_crowd_environment_anchor_for_12A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 716664
+      sha256: 286dd7f4ddbb8227128b9682c33321547f2c9c1489e23d4b579519c606b63d0d
+    accepted_tower_variation: Upper architecture / Great Lantern enclosure differs
+      modestly from canonical ENV_02; accepted because recognisable old-stone Bellwood
+      tower, extinguished state, tower/crowd relationship and 12A story beat remain
+      successful. Canonical tower master remains future design authority; no regeneration.
+    old_woman_secondary_continuity: Central older woman with silver hair and burgundy
+      shawl accepted as useful production interpretation and SECONDARY visual continuity
+      evidence. Written canonical Old Woman specification remains authoritative and
+      is not replaced.
+    unlit_lantern_foreshadowing: 'Ordinary carried lanterns are UNLIT: approved foreshadowing
+      only. Preserve chronology: 13A first raised light, 13B more lights, 13C dozens
+      illuminated, 13D path of lights.'
+    accepted_minor_variations:
+    - description: background faces
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: individual clothing
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: minor body proportions
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: rain streaks
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: wet-stone reflections
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: window illumination
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: small architectural textures
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: ordinary lantern details
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: distant/background anatomy
+      status: accepted
+      must_not_trigger_regeneration: true
+    variation_condition: Preserve Bellwood identity, chronology, important foreground
+      anatomy, crowd concern, lighting and rescue progression.
+    crowd_plate_role: Principal production crowd/environment anchor for 12A. Secondary
+      evidence for villager appearance/clothing, storm-square atmosphere, Old Woman
+      appearance, ordinary unlit lanterns and foreground/midground layout. Not mandatory
+      in every later crowd prompt; reference selection remains image-specific.
+    canonical_reference_authority_note: Canonical environment masters and written
+      character specification remain authoritative; no canonical tower or character
+      redesign.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Already at canonical destination; no move or image-byte
+      modification; SHA-256 verified before/after registration.
+  PI_022:
+    id: PI_022
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 12B
+    story_purpose: The first villager recognises a distant flicker.
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving Attempt 1; no second attempt
+      justified or automatic retry.
+    approval_basis: |-
+      Approve the image for shot 12B.
+
+      It successfully creates the first-observer recognition beat between:
+
+      12A — broad worried crowd
+      12B — Old Woman notices something
+      12C — tiny distant flicker reveal
+      12D — “Look!” / crowd reaction
+
+      Approve:
+
+      - Old Woman approximately 70
+      - silver hair in low bun
+      - burgundy shawl
+      - charcoal/dark dress
+      - recognisable continuity with PI_021
+      - heavy Weather-C rain
+      - visibly wet hair and clothing
+      - cold storm-dark environment
+      - offscreen forest-directed eyeline
+      - expression transitioning from worry toward recognition
+      - no camera-facing pose
+      - medium-close cinematic composition
+      - secondary villagers remain subordinate
+      - worried rather than celebratory background reaction
+      - no visible rescue path
+      - no raised glowing lanterns
+      - no obvious distant beacon
+      - no pointing
+      - no shouting
+      - no completed 12D reaction
+      - no Maya
+      - no Lumi
+      - no homecoming
+      - cinematic 3D storybook continuity
+
+      The absence of a visible flicker is intentional.
+
+      Shot 12C owns the clearer distant-flicker reveal.
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_022_OLD_WOMAN_FIRST_RECOGNITION_v1.jpeg
+      role: approved_production_foundation_for_12B_old_woman_close_continuity
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 622277
+      sha256: 934a61c7eb1a320217b26374dc3c492507eb48b3f9d147fbbd8965f0b8e80508
+    accepted_minor_variations:
+    - description: minor facial-detail differences from PI_021
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: individual wrinkles
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: loose wet hair strands
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: rain placement
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: shawl folds
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: wet fabric texture
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: stone reflections
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: background faces
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: background clothing details
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: subdued architectural details
+      status: accepted
+      must_not_trigger_regeneration: true
+    variation_condition: Observer identity, story action, chronology and world continuity
+      remain intact.
+    old_woman_continuity_role: Principal production visual anchor for the Old Woman's
+      close/medium-close appearance during recognition. Preserve approximately 70
+      years, silver hair in low bun, burgundy shawl, charcoal/dark dress, same general
+      facial identity and storybook style; exact wrinkles/hair strands need not match.
+    old_woman_authority_hierarchy:
+    - Written canonical Old Woman specification
+    - PI_021 broad crowd-context interpretation
+    - PI_022 closer production continuity
+    chronology_constraint: 'FIRST RECOGNITION ONLY. No visible flicker is intentional:
+      12C owns the clearer tiny distant flicker reveal; 12D owns Look! / crowd reaction;
+      13A onward begins raising/lighting ordinary lanterns. No rescue-light progression
+      in PI_022.'
+    canonical_reference_authority_note: Written canonical character specification
+      remains authoritative and is not replaced; canonical environment masters retain
+      authority.
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Already at canonical destination; no move or image-byte
+      modification; SHA-256 verified before/after registration.
+  PI_023:
+    id: PI_023
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 13A
+    story_purpose: One ordinary Bellwood resident initiates the community response
+      by raising the first lit household lantern.
+    supporting_derivative_shots: []
+    supporting_element_uses:
+    - 13B
+    - 13D
+    - 14C
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human review approving Attempt 1; no second attempt
+      justified.
+    approval_basis: |-
+      PI_023 is approved because:
+
+      - One initiating Bellwood resident clearly dominates the shot.
+      - The resident raises one ordinary household lantern to approximately head/shoulder height.
+      - His expression communicates hopeful resolve rather than celebration.
+      - The lantern is clearly an ordinary Bellwood lantern and not Lumi.
+      - Exactly one handheld lantern is visibly lit.
+      - Background residents may hold lanterns in readiness, but those lanterns remain visually unlit.
+      - The flame is natural and non-magical.
+      - Hand anatomy, grip, handle connection, gravity and lantern orientation are plausible.
+      - Wet clothing, rain and wet village surfaces preserve the weakening-storm continuity.
+      - Bellwood's timber-and-stone architecture remains consistent.
+      - Background residents remain subordinate and concerned.
+      - No relit Great Lantern is introduced.
+      - The medium action composition is clearly distinct from the earlier 12A crowd plate.
+      - Face, raised hand, handle and complete lantern remain safely framed.
+      - The established cinematic 3D storybook style is preserved.
+      - No modern objects, generated text or story-breaking duplicates are present.
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_023_FIRST_VILLAGER_RAISES_LANTERN_v1.jpeg
+      role: principal_first_response_first_lit_villager_lantern_anchor_for_13A
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 608603
+      sha256: 012a736a5da7ac8d9014ec88779d81e0a7a4dd5e72b9c4f668752259aaa7905c
+    accepted_minor_variations:
+    - description: Raised household lantern produces somewhat stronger amber pool
+        than Lumi normally produces.
+      acceptance_reason: Larger ordinary household lantern, not Lumi; light remains
+        local to lantern, resident and immediate foreground without beam, magical
+        aura or rescue path. Does not violate Lumi thematic constraint.
+      status: accepted
+      must_not_trigger_regeneration: true
+    - description: Several background residents hold ordinary lanterns in readiness.
+      acceptance_reason: Remain visually unlit, continue PI_021 setup; PI_023 remains
+        first clearly illuminated villager lantern.
+      status: accepted
+      must_not_trigger_regeneration: true
+    chronology_constraint: 12A worried crowd beneath dark tower → 12B first recognition
+      → 12C distant flicker reveal → 12D villagers react → 13A first villager raises
+      one lit lantern → 13B additional lights → 13C dozens → 13D path toward forest.
+      PI_023 is FIRST-LIT-VILLAGER-LANTERN anchor; never reinterpret as multiple-light
+      response.
+    continuity_anchor_role: PI_021 remains principal worried crowd/environment anchor;
+      PI_022 remains principal Old Woman recognition anchor; PI_023 is principal first-response
+      / first-lit-villager-lantern production anchor. Canonical environment references
+      retain Bellwood architecture and Great Lantern design authority. Optional secondary
+      evidence for later villager-light shots; reference selection remains image-specific.
+    weather_state: D — storm weakening; continuing rain and wet clothing/surfaces
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Already at canonical destination; no move or image-byte
+      modification; SHA-256 verified before/after registration.
+  PI_024:
+    id: PI_024
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 14A
+    story_purpose: Maya sees and recognises the villagers' path of many small lights
+      leading home.
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+    approval_authority: Explicit human approval of Attempt 1; no second attempt justified.
+    approval_basis: |-
+      Record:
+
+      - Canonical Maya identity and approximate ten-year-old appearance are preserved.
+      - Approved mustard coat, cream layer, dark teal trousers and forest-green satchel remain recognisable.
+      - State-3 continuity is preserved through soaked clothing, wet/messy hair and visible storm wear/mud.
+      - Maya remains physically separated from Bellwood and is still in the forest.
+      - Her expression communicates recognition and emerging cautious hope.
+      - Her eyeline clearly connects toward the distant screen-left lights.
+      - She is NOT running yet.
+      - She has NOT reached Bellwood.
+      - No reunion, celebration or completed safety is depicted.
+      - Established evergreen mountain-forest identity is preserved.
+      - Weather-D weakening rain is maintained.
+      - Wet foliage, rocks and ground remain readable.
+      - Distant warm lights read clearly through the cold forest.
+      - The lights remain numerous, individually separated small sources rather than a magical continuous line.
+      - Strong dark spatial separation remains between Maya and the distant route.
+      - Cold navy/slate forest values dominate.
+      - Warm lights remain distant accents.
+      - Lumi is intentionally offscreen.
+      - No non-canonical tower variation is reproduced.
+      - Composition creates a strong visual relationship:
+
+      MAYA
+      → EYELINE
+      → DISTANT LIGHTS
+      → HOME
+
+      - Cinematic stylised 3D storybook continuity is preserved.
+      - Composition is suitable for restrained future animation.
+    accepted_variations: |-
+      Record without regeneration:
+
+      1. DISTANT PEOPLE NOT INDIVIDUALLY READABLE
+
+      The distant lantern sources are abstracted by atmospheric depth and distance, so individual villagers are not clearly identifiable.
+
+      ACCEPT.
+
+      13D has already established that the collective lights originate from villagers carrying ordinary lanterns.
+
+      For 14A, distance and partial abstraction strengthen Maya's physical separation from safety.
+
+      Do not require visible individual villagers in this shot.
+
+      2. MAYA EXPRESSION
+
+      Maya's expression is somewhat serene as recognition begins rather than strongly exhausted.
+
+      ACCEPT because:
+
+      - wet hair remains evident,
+      - coat remains wet/dirty,
+      - environment remains storm-dark,
+      - posture remains restrained,
+      - she has not begun celebrating or running,
+      - the emotional beat still reads as cautious recognition/hope.
+
+      Do not propagate increased serenity into earlier State-3 shots.
+
+      3. DISTANT LIGHT ARRANGEMENT
+
+      Minor differences from SHOT_13D_PATH_OF_LIGHTS_v1 in exact light positions are acceptable.
+
+      Preserve conceptual continuity rather than pixel-identical geography:
+
+      MANY SMALL HUMAN LIGHTS
+      → DISTANT ROUTE
+      → WAY HOME.
+
+      SHOT_13D remains authoritative for the collective community-path establishment shot.
+    continuity_anchor_role: |-
+      Register PI_024 as the principal production anchor for:
+
+      14A — MAYA RECOGNISES THE PATH HOME.
+
+      It may provide secondary continuity evidence for later Group-G images involving:
+
+      - Maya's transition from fear to hope,
+      - Weather-D forest state,
+      - distant collective lantern lighting,
+      - direction toward Bellwood.
+
+      It must NOT override:
+
+      - canonical Maya identity references,
+      - canonical Lumi references,
+      - canonical environment masters,
+      - SHOT_13D's authority for the full community-created path.
+
+      Chronology must remain:
+
+      13D:
+      Villagers create the path.
+
+      14A / PI_024:
+      Maya sees and recognises it.
+
+      14B:
+      Maya runs toward Bellwood.
+
+      14C:
+      Villagers receive Maya.
+
+      Do not collapse these beats.
+    animation_note: |-
+      Record PI_024 as a strong candidate for restrained future image-to-video treatment.
+
+      Potential motion:
+
+      - subtle breathing,
+      - tiny head/eye recognition movement,
+      - slight wet-hair movement,
+      - weakening rainfall,
+      - atmospheric mist,
+      - restrained distant lantern flicker.
+
+      Do NOT animate Maya immediately into running within 14A.
+
+      Do NOT enlarge or connect the distant lantern lights.
+
+      Do NOT introduce Lumi.
+    animation_authorized: false
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_024_MAYA_SEES_PATH_HOME_v1.jpeg
+      role: principal_production_anchor_for_14A_maya_recognises_path_home
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 655823
+      sha256: d073f7c4712d9f1b6d4a0141fbaee50be358f6c2390a23d380591f7feffa195e
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Already at canonical destination; no move, conversion,
+      recompression or image-byte modification. Hash verified before/after registration.
+  PI_025:
+    id: PI_025
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 14B
+    story_purpose: Maya runs toward the visible path and welcoming lights leading
+      home.
+    supporting_derivative_shots: []
+    optional_supporting_use:
+    - 14C
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 2
+    attempt_history:
+    - attempt: 1
+      original_ledger_attempt_number: 28
+      result: FAIL
+      reason: Visible rescue lights were behind Maya at screen-left while Maya ran/looked
+        screen-right; action read as running away from route home.
+    - attempt: 2
+      original_ledger_attempt_number: 29
+      result: PASS
+      approval: APPROVED v1
+      targeted_correction: Visible lights ahead → Maya orientation → running vector
+        → homeward travel.
+    approval_authority: Human approval of Attempt 2; Attempt 3 not authorized.
+    approval_basis: |-
+      Record:
+
+      - canonical Maya identity and approximate age preserved
+      - canonical costume preserved
+      - State-3 wet/muddy continuity preserved
+      - wet messy hair retained
+      - strong readable running action
+      - believable child running mechanics
+      - coherent body orientation toward the destination
+      - visible rescue lights are now ahead of Maya
+      - Maya's travel direction and destination agree spatially
+      - substantial distance from safety remains
+      - exactly one small Lumi
+      - plausible carrying grip
+      - connected handle
+      - believable gravity
+      - restrained running swing
+      - tiny natural amber flame
+      - local/non-magical illumination
+      - wet forest/trail continuity
+      - Weather-D weakening-storm continuity
+      - no completed arrival
+      - no villager reception
+      - no reunion
+      - no celebration
+      - cinematic 3D storybook continuity
+      - useful motion-ready silhouette
+    accepted_variations: |-
+      Record as accepted:
+
+      - Maya's coat is heavily muddy/soiled relative to PI_024; this is acceptable
+        during continued running through the soaked forest.
+      - Rear three-quarter framing reduces facial visibility but preserves identity
+        sufficiently for this action shot.
+      - Exact distant-light positions may differ from PI_024 and 13D while preserving
+        the same conceptual route-home continuity.
+      - Minor wet hair, mud, raindrop, cloth, vegetation, lantern wear and trail
+        differences remain acceptable.
+
+      Canonical character and environment authorities remain unchanged.
+    continuity_anchor_role: |-
+      Record the sequence explicitly:
+
+      14A / PI_024:
+      Maya recognises the path home.
+
+      14B / PI_025:
+      Maya actively runs toward the visible path/home.
+
+      14C:
+      Villagers receive Maya.
+
+      PI_025 must not redefine 14C.
+
+      PI_025 becomes the principal production anchor for 14B.
+
+      13D remains the principal full community-created path-of-lights anchor.
+
+      PI_024 remains the principal recognition anchor.
+    animation_note: |-
+      Record future animation potential:
+
+      - forward running cycle
+      - restrained body rise/fall
+      - wet hair movement
+      - coat movement
+      - satchel inertia
+      - restrained Lumi pendulum movement
+      - rain/mist
+      - distant lantern flicker
+
+      Future animation must preserve:
+
+      - homeward travel direction
+      - connected Lumi handle
+      - gravity
+      - small Lumi scale
+      - tiny flame
+      - limited local illumination
+      - substantial distance from destination
+
+      Do NOT animate now.
+    14C_reuse_status: |-
+      Record:
+
+      PI_025 may provide optional foreground/action continuity evidence for 14C.
+
+      However:
+
+      - reuse is NOT mandatory
+      - cropping PI_025 does not create a new 14C action
+      - 14C must independently communicate arrival/reception
+      - 14C story quality takes precedence over asset reuse
+
+      Do not create the 14C composite during this registration.
+    animation_authorized: false
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_025_MAYA_RUNS_TOWARD_BELLWOOD_v1.jpeg
+      role: principal_production_anchor_for_14B_homeward_running
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 700222
+      sha256: b72b0c78a25ba544221588c614b85087ac2553f7e68f2e716fb9d07f78e78bae
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Approved Attempt 2 already at canonical destination; no
+      move or image-byte modification. Hash verified before/after registration. Failed
+      Attempt 1 not registered as asset.
+  PI_028:
+    id: PI_028
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 16B
+    story_purpose: 'Final thematic visual: illuminate only the next stones.'
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+      original_ledger_attempt_number: 30
+    approval_authority: Human-reviewed Gemini Attempt 1 PASS; no Attempt 2 or further
+      generation justified.
+    approval_basis: |-
+      Record:
+
+      - lower-body/detail composition correctly prioritises Lumi, immediate footing and wet stones
+      - Maya retains appropriate child proportions and canonical visible costume
+      - Maya remains visibly damp/muddy in State 4
+      - action reads as calm post-storm walking rather than running
+      - exactly one Lumi
+      - Lumi remains approximately 18 cm / small handheld scale
+      - canonical rectangular brass/glass identity sufficiently preserved
+      - carrying hand/grip is plausible
+      - handle is connected
+      - gravity/orientation are believable
+      - tiny natural amber flame
+      - apparent secondary flame shape is accepted as glass reflection, not an additional flame
+      - illumination is restricted to the immediate stepping area
+      - next boot/step and nearby stones are clearly readable
+      - light falls away rapidly into substantially darker Bellwood surroundings
+      - no continuous glowing path
+      - no whole-street illumination
+      - no magical rays or power escalation
+      - wet Bellwood street and restrained post-storm atmosphere preserved
+      - warm windows remain secondary
+      - cinematic 3D storybook style preserved
+      - frame is suitable for restrained later animation
+    thematic_approval: |-
+      Record explicitly:
+
+      SMALL LIGHT → NEXT VISIBLE STEP.
+
+      Lumi's illumination remains local and physically restrained.
+      The surrounding Bellwood street remains substantially darker.
+      The frame visually resolves the central story theme without increasing Lumi's power.
+    accepted_variations: |-
+      - local amber pool is somewhat generous but remains sufficiently restricted to the immediate stepping area
+      - visible secondary flame-like shape is accepted as glass reflection
+      - minor scratches/tarnish
+      - exact mud distribution
+      - cloth folds
+      - paving differences
+      - window arrangement
+      - mist/reflections
+      - fine Lumi construction/weathering variation within canonical identity tolerance
+
+      These do not justify regeneration.
+    animation_note: |-
+      Record for later only:
+      - gentle Maya walking step
+      - restrained Lumi pendulum/sway
+      - tiny natural flame movement
+      - subtle wet-stone reflection shimmer
+      - slight post-storm mist movement
+
+      Animation must preserve:
+      - small-light constraint
+      - handle connection
+      - gravity
+      - Lumi scale
+      - rapid light falloff
+
+      Do NOT animate now.
+    continuity_anchor_role: |-
+      PI_028 becomes the principal production anchor for shot 16B and the final thematic
+      SMALL LIGHT → NEXT STEP
+      visual.
+
+      It does NOT replace:
+      - canonical Lumi identity references
+      - canonical Maya identity references
+      - canonical ENV_07 environment authority
+    animation_authorized: false
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_028_LUMI_ILLUMINATES_NEXT_STONES_v1.jpeg
+      role: principal_production_anchor_for_16B_small_light_next_step
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      file_size_bytes: 661330
+      sha256: 7ece69611f4fd5fe6c1443adade0aed586b0e2df099311c83282ed182b2f4e80
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Only matching approved PI_028 source already at canonical
+      destination; no move or byte modification; hash verified before/after registration.
+  PI_026:
+    id: PI_026
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 15C
+    story_purpose: Lumi is at peace among ordinary village lights.
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+      original_ledger_attempt_number: 31
+    approval_authority: Explicit human approval of Attempt 1; no Attempt 2 or additional
+      generation justified.
+    approval_basis: |-
+      Record:
+
+      - Exactly one recognisable Lumi.
+      - Lumi remains a small handheld physical lantern; foreground camera proximity does not redefine canonical physical scale.
+      - Canonical aged-brass/glass construction remains recognisable.
+      - Tiny natural flame.
+      - No magical power escalation.
+      - Lumi is important through foreground framing/focus rather than extraordinary illumination.
+      - Multiple ordinary Bellwood lights remain visible at different depths.
+      - The composition communicates calm belonging rather than superiority.
+      - No rescue-path repetition.
+      - Plausible hand grip, connected handle, suspension and gravity.
+      - Bellwood post-storm street continuity is maintained.
+      - Wet paving and residual atmospheric moisture remain visible.
+      - Rain has stopped.
+      - Cool blue ambient environment with restrained warm practical lights.
+      - Maya is intentionally outside the crop except for hand/sleeve.
+      - No running, reception or invented handoff.
+      - Great Lantern is intentionally outside frame and therefore does not compete with the emotional purpose.
+      - Cinematic 3D storybook style remains consistent.
+    accepted_variations: |-
+      Explicitly record:
+
+      1. FOREGROUND SCALE APPEARANCE
+      Lumi occupies a large portion of the frame because she is close to the camera.
+      The visible child hand and carrying relationship preserve handheld physical scale.
+      This does NOT redefine Lumi's canonical approximately-18cm size.
+
+      2. FLAME PROMINENCE
+      Lumi's foreground flame appears more visually prominent than distant practical lights because of camera proximity, focus and perspective.
+      The flame itself remains small and natural.
+      There is no magical bloom, beam, giant illumination radius or power upgrade.
+
+      3. MAYA FRAMING
+      Only Maya's hand/sleeve is substantially visible.
+      This is intentional for 15C and does not constitute an identity or continuity failure.
+
+      4. GREAT LANTERN
+      The Great Lantern is outside frame.
+      Its relighting in 15B remains canonical chronology.
+      Its absence from this composition is intentional and prevents it from dominating Lumi's emotional-resolution beat.
+    thematic_approval: |-
+      Record the distinction:
+
+      PI_026:
+      ONE LIGHT AMONG MANY → BELONGING WITHOUT SUPERIORITY.
+
+      PI_028:
+      SMALL LIGHT → NEXT VISIBLE STEP → USEFULNESS.
+
+      These are intentionally different thematic compositions.
+
+      PI_026 must not establish that Lumi is brighter or more powerful than ordinary Bellwood lanterns.
+    continuity_anchor_role: |-
+      PI_026 becomes the principal production anchor for shot 15C and Lumi's emotional resolution among ordinary lights.
+
+      It may provide secondary post-storm lighting/street continuity where useful.
+
+      It does NOT replace:
+      - canonical Lumi references
+      - canonical Maya references
+      - canonical environment references
+      - PI_028 as the 16B next-step thematic anchor
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_026_LUMI_AMONG_ORDINARY_LIGHTS_v1.jpeg
+      role: principal_production_anchor_for_15C_belonging_among_ordinary_lights
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      framing_compatibility: Landscape 1.7917:1; compatible with minor later 16:9
+        editorial framing; no crop performed.
+      file_size_bytes: 612748
+      sha256: 6440d4eed4d28952d154308b202f1b987261ac5cfb4457a1d0d37bb735d8a5b9
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Readable approved source already at canonical location;
+      no move, conversion, rewrite or image-byte modification. Hash verified before/after
+      registration.
+  PI_027:
+    id: PI_027
+    status: approved_v1
+    status_display: APPROVED v1 / REGISTERED
+    registered: true
+    primary_shot: 16A
+    story_purpose: Maya and Lumi quietly walk home through Bellwood after the storm.
+    supporting_derivative_shots: []
+    generation_tool: Gemini — Nano Banana 2
+    generation_attempts: 1
+    attempt_history:
+    - attempt: 1
+      result: PASS
+      original_ledger_attempt_number: 32
+    approval_authority: Explicit human approval of Attempt 1; no Attempt 2 or further
+      generation justified.
+    approval_basis: |-
+      Record:
+
+      - Canonical Maya identity remains recognisable.
+      - Maya retains approximately ten-year-old child proportions.
+      - Canonical mustard coat, cream sweater, dark teal trousers,
+        brown boots and forest-green satchel remain consistent where visible.
+      - State-4 continuity passes:
+        damp hair/clothing,
+        residual mud/weathering,
+        no clean/dry reset.
+      - Maya communicates calm, tired relief.
+      - Eyeline and body orientation follow the street ahead.
+      - Action unmistakably reads as WALKING.
+      - Walking stride, feet, balance and weight are plausible.
+      - Rear-three-quarter staging supports quiet forward movement.
+      - Exactly one Lumi.
+      - Lumi remains small and handheld.
+      - Canonical rectangular aged-brass/glass construction remains recognisable.
+      - Tiny natural amber flame.
+      - Right-hand carrying relationship is plausible.
+      - Handle remains connected.
+      - Gravity and modest walking suspension are believable.
+      - Lumi remains separated from Maya's legs/body.
+      - Bellwood post-storm street identity is preserved.
+      - Wet reflective paving remains visible.
+      - Rain has stopped.
+      - Cool blue ambient environment and restrained warm practical lights remain balanced.
+      - No rescue-path repetition.
+      - No running.
+      - No reception/celebration.
+      - No deliberate 16B next-step spotlight.
+      - No magical illumination.
+      - Composition is motion-ready and cinematic.
+      - Approved cinematic 3D storybook style remains consistent.
+    accepted_variations: |-
+      Explicitly record:
+
+      1. MAYA FACE VISIBILITY
+      Maya's face is only partially visible because of the rear-three-quarter walking composition.
+      This is intentional and appropriate for 16A.
+      It does not constitute identity failure.
+
+      2. MUD / WEATHERING
+      Maya retains substantial visible mud and weathering.
+      This is accepted as lived-through-storm continuity and must not be interpreted as a cleanliness defect.
+
+      3. LUMI DETAIL AT DISTANCE
+      Some fine Lumi construction/wear details are naturally less prominent because this is a wider walking composition.
+      Canonical Lumi references remain authoritative.
+
+      4. STREET GEOGRAPHY
+      Minor Bellwood street arrangement differences are accepted where they remain consistent with the established architecture/material language.
+      Canonical environment masters remain authoritative.
+
+      5. PRACTICAL LIGHTS
+      Background windows and ordinary practical lights may vary in placement.
+      They remain subordinate and do not redefine Bellwood geography.
+    sequence_thematic_status: |-
+      Record the final Scene-16 visual progression:
+
+      PI_026 / 15C:
+      ONE LIGHT AMONG MANY
+      → BELONGING WITHOUT SUPERIORITY
+
+      PI_027 / 16A:
+      QUIET WALK HOME
+      → CONTINUATION AFTER THE STORM
+
+      PI_028 / 16B:
+      SMALL LIGHT
+      → NEXT VISIBLE STEP
+      → USEFULNESS
+
+      These are distinct compositions and must remain distinct in later editing/animation.
+    continuity_anchor_role: |-
+      PI_027 becomes the principal production anchor for shot 16A.
+
+      It anchors:
+      - wider calm post-storm walking
+      - Maya State-4 full-body continuity
+      - Maya/Lumi carrying relationship during the final walk
+      - wet Bellwood street movement
+
+      It does NOT replace:
+      - canonical Maya identity references
+      - canonical Lumi identity references
+      - canonical scale reference
+      - ENV_07 architectural/environment authority
+      - PI_026 as the 15C belonging anchor
+      - PI_028 as the 16B next-step thematic anchor
+    animation_note: |-
+      Record future animation potential:
+      - slow calm walking
+      - restrained arm/Lumi sway
+      - satchel inertia
+      - subtle coat movement
+      - damp hair movement
+      - tiny natural flame movement
+      - wet-street reflection shimmer
+      - residual mist
+
+      Future animation must preserve:
+      - calm walking rather than running
+      - travel direction
+      - connected handle
+      - gravity
+      - Lumi's small scale
+      - restrained flame/light
+      - Maya's damp/muddy State-4 continuity
+
+      No animation is authorized in this operation.
+    animation_authorized: false
+    canonical_production_asset:
+      path: 04_Images/Approved/PI_027_MAYA_LUMI_QUIET_WALK_HOME_v1.jpeg
+      role: principal_production_anchor_for_16A_quiet_walk_home
+      status: approved_v1
+      format: JPEG
+      dimensions:
+        width: 1376
+        height: 768
+      aspect_ratio: '43:24'
+      aspect_ratio_decimal: 1.7916666666666667
+      final_framing_target: '16:9'
+      framing_compatibility: Compatible with minor later 16:9 editorial framing; no
+        crop performed.
+      file_size_bytes: 646870
+      sha256: a279d850936314152c34b28da9f7102dc5443574050c72cdf9e46d208d0d4b4d
+    regeneration_authorized: false
+    derivatives_created: false
+    derivative_generation_authorized: false
+    file_registration_note: Readable approved source already canonical; no move, conversion,
+      rewrite or image-byte modification; hash verified before/after registration.
+production_image_calibration:
+  stage: 8A
+  status: complete_pass
+  complete: true
+  selected_tool: Gemini — Nano Banana 2
+  sequence:
+  - PI_001
+  - PI_006
+  - PI_011
+  images:
+    PI_001:
+      result: PASS
+      status: approved_v1_registered
+      registered: true
+      asset_path: 04_Images/Approved/PI_001_LUMI_WORKSHOP_SHELF_v1.jpeg
+    PI_006:
+      result: PASS
+      status: approved_v1_registered
+      registered: true
+      asset_path: 04_Images/Approved/PI_006_MAYA_LUMI_WORKSHOP_v1.jpeg
+      generation_attempts: 1
+      regeneration_authorized: false
+    PI_011:
+      result: PASS
+      status: approved_v1_registered
+      registered: true
+      asset_path: 04_Images/Approved/PI_011_MAYA_LUMI_STORM_TRAIL_v1.jpeg
+      generation_attempts: 1
+      regeneration_authorized: false
+  individual_generation_approval_required: true
+  automatic_retries: 0
+  next_action: Prepare the first systematic production-image batch using the approved
+    generation order and calibration findings.
+  observations:
+  - id: PI_006_REFERENCE_AUTHORITY_001
+    source_image: PI_006
+    basis: Human-approved first attempt
+    observation: Gemini Nano Banana 2 successfully preserved a usable combination
+      of Maya identity, Lumi identity, relative scale, physical interaction and workshop
+      continuity when references were given explicit authority roles and the character
+      relationship was given composition priority over the environment. This is evidence
+      for the production workflow, not permission to remove individual-image review
+      gates.
+    individual_image_review_required: true
+  status_display: COMPLETE / PASS
+  findings:
+  - id: CALIBRATION_001
+    finding: Gemini Nano Banana 2 is approved as the current production-image generator
+      for The Little Lantern.
+  - id: CALIBRATION_002
+    finding: Explicit reference-authority roles materially improve results.
+  - id: CALIBRATION_003
+    finding: Character/composition priority must be stated explicitly so an environment
+      reference does not dominate the shot.
+  - id: CALIBRATION_004
+    finding: Gemini demonstrated usable preservation of Lumi identity, Maya identity,
+      Maya/Lumi relative scale, physical character/prop interaction, workshop continuity,
+      forest continuity, pre-storm continuity, storm-state continuity, wet-character
+      treatment and cold/warm lighting separation.
+    evidence:
+    - PI_001
+    - PI_006
+    - PI_011
+  - id: CALIBRATION_005
+    finding: Canonical character/environment references remain authoritative; approved
+      production images do not replace canonical masters.
+  - id: CALIBRATION_006
+    finding: Individual production-image review gates remain mandatory.
+  - id: CALIBRATION_007
+    finding: Initial attempt = 1; automatic retries = 0; STOP → REVIEW → DECIDE. Additional
+      attempts require explicit approval.
+  - id: CALIBRATION_008
+    finding: A beautiful image that breaks identity, scale, continuity or story intent
+      remains a failure.
+production_image_generator:
+  name: Gemini — Nano Banana 2
+  status: approved_current_project_generator
+  scope: The Little Lantern production images
+  approval_basis: 'Human-approved Stage 8A calibration: PI_001, PI_006 and PI_011'
+  canonical_master_authority_retained: true
+  individual_image_review_required: true
+  default_initial_attempts: 1
+  automatic_retries: 0
+  additional_attempts_require_explicit_approval: true
+production_ledger:
+  original_planned_new_production_image_compositions: 28
+  approved_production_image_count: 28
+  approved_production_image_ids:
+  - PI_001
+  - PI_002
+  - PI_003
+  - PI_004
+  - PI_005
+  - PI_006
+  - PI_007
+  - PI_008
+  - PI_009
+  - PI_010
+  - PI_011
+  - PI_012
+  - PI_013
+  - PI_014
+  - PI_015
+  - PI_016
+  - PI_017
+  - PI_018
+  - PI_019
+  - PI_020
+  - PI_021
+  - PI_022
+  - PI_023
+  - PI_024
+  - PI_025
+  - PI_026
+  - PI_027
+  - PI_028
+  remaining_planned_compositions: 0
+  total_generation_attempts: 32
+  successful_first_attempt_ids:
+  - PI_002
+  - PI_003
+  - PI_004
+  - PI_006
+  - PI_007
+  - PI_008
+  - PI_009
+  - PI_010
+  - PI_011
+  - PI_012
+  - PI_013
+  - PI_014
+  - PI_015
+  - PI_016
+  - PI_017
+  - PI_018
+  - PI_020
+  - PI_021
+  - PI_022
+  - PI_023
+  - PI_024
+  - PI_026
+  - PI_027
+  - PI_028
+  attempts_by_image:
+    PI_001: 2
+    PI_002: 1
+    PI_003: 1
+    PI_006: 1
+    PI_011: 1
+    PI_004: 1
+    PI_005: 2
+    PI_007: 1
+    PI_008: 1
+    PI_009: 1
+    PI_010: 1
+    PI_014: 1
+    PI_015: 1
+    PI_013: 1
+    PI_016: 1
+    PI_012: 1
+    PI_017: 1
+    PI_018: 1
+    PI_019: 2
+    PI_020: 1
+    PI_021: 1
+    PI_022: 1
+    PI_023: 1
+    PI_024: 1
+    PI_025: 2
+    PI_028: 1
+    PI_026: 1
+    PI_027: 1
+  accounting_scope: Actual human-reported production-image syntheses only; excludes
+    planning, calibration preparation and registration operations.
+  first_attempt_approved_count: 24
+  first_attempt_approved_denominator: 28
+  second_attempt_recovery_ids:
+  - PI_001
+  - PI_005
+  - PI_019
+  - PI_025
+  original_composition_set_status: complete_pass
+production_batches:
+  batch_1_workshop:
+    name: Batch 1 — Workshop
+    stage: 8B
+    status: complete_pass
+    generation_order:
+    - PI_002
+    - PI_003
+    - PI_004
+    - PI_005
+    previously_approved_workshop_anchors:
+    - PI_001
+    - PI_006
+    members:
+      PI_002:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_003:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_004:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_005:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+    status_display: COMPLETE / PASS
+    completed_workshop_image_ids:
+    - PI_001
+    - PI_002
+    - PI_003
+    - PI_004
+    - PI_005
+    - PI_006
+  batch_c_dry_forest:
+    name: Batch C — Dry Forest
+    stage: 8B
+    status: complete_pass
+    generation_order:
+    - PI_007
+    - PI_008
+    - PI_009
+    members:
+      PI_007:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_008:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_009:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+    status_display: COMPLETE / PASS
+  group_d_storm_pair_emotional_inserts:
+    name: Group D — Storm pair and emotional inserts
+    stage: 8B
+    status: complete_pass
+    generation_order:
+    - PI_010
+    - PI_011
+    - PI_014
+    - PI_015
+    - PI_013
+    - PI_016
+    - PI_012
+    - PI_017
+    members:
+      PI_010:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_011:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_014:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_015:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_013:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_016:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_012:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_017:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+    status_display: COMPLETE / PASS
+  group_e_marker_sequence:
+    name: Group E — Marker sequence
+    stage: 8B
+    status: complete_pass
+    generation_order:
+    - PI_018
+    - PI_019
+    - PI_020
+    members:
+      PI_018:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_019:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_020:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+    status_display: COMPLETE / PASS
+  group_f_villagers_bellwood:
+    name: Group F — Villagers / Bellwood
+    stage: 8B
+    status: complete_pass
+    status_display: COMPLETE / PASS
+    generation_order:
+    - PI_021
+    - PI_022
+    - PI_023
+    members:
+      PI_021:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_022:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_023:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+  group_g_path_of_lights_home:
+    name: Group G — Path of lights / home
+    stage: 8B
+    status: complete_pass
+    generation_order:
+    - PI_024
+    - PI_025
+    members:
+      PI_024:
+        status: approved_v1_registered
+        generation_authorized: false
+        prompt_prepared: false
+      PI_025:
+        status: approved_v1_registered
+        generation_authorized: false
+        prompt_prepared: false
+    prerequisite: Human-approved 13D method-escalated production shot
+    individual_review_required: true
+    status_display: COMPLETE / PASS
+    next_pi:
+    next_prompt_prepared: false
+    next_required_asset:
+    completed_components:
+    - 13D
+    - PI_024 / 14A
+    - PI_025 / 14B
+    - SHOT_14C
+    14C_status: complete_pass_approved_v1_registered
+  group_h_post_storm_ending:
+    name: Group H — Post-storm ending
+    stage: 8B
+    status: complete_pass
+    status_display: COMPLETE / PASS
+    generation_order:
+    - PI_028
+    - PI_026
+    - PI_027
+    members:
+      PI_028:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_026:
+        status: approved_v1_registered
+        generation_authorized: false
+      PI_027:
+        status: approved_v1_registered
+        generation_authorized: false
+    next_pi:
+    next_prompt_prepared: false
+    individual_review_required: true
+production_next_step:
+  status: awaiting_human_08C_kling_generation
+  operation: Human generation of 08C Kling Attempt 1 only, then STOP for review
+  reason: Stage 10B package prepared; test is not final production tool approval.
+  audit_performed: true
+  animation_ready: true
+  animation_readiness_gate: PASS
+  animation_planning_status: v1 COMPLETE / APPROVED FOR CALIBRATION PREPARATION
+  animation_generation_status: NOT STARTED
+  calibration_test_status: '08C / KLING / ATTEMPT 1 PREPARED / AWAITING HUMAN GENERATION'
+  image_generation_authorized: false
+  video_generation_authorized: false
+  video_generator_selected: false
+  next_pi: 
+  human_manual_generation_authorization: '08C Kling Attempt 1 ONLY'
+method_escalated_generated_shots:
+  planned: 1
+  approved: 1
+  attempts: 1
+  shots:
+  - 13D
+  records:
+    13D:
+      escalation_id: 13D_METHOD_ESCALATION_001
+      status: COMPLETE / PASS / APPROVED v1 / REGISTERED
+      workflow_status: COMPLETE / PASS / APPROVED v1 / REGISTERED
+      previous_method: NON-GENERATIVE COMPOSITE
+      current_method: REFERENCE-CONTROLLED GENERATED PRODUCTION SHOT
+      classification: METHOD_ESCALATED_GENERATED_SHOT
+      reason: SOURCE PLATES CANNOT REPRESENT REQUIRED STORY GEOGRAPHY AT PRODUCTION
+        QUALITY THROUGH NON-GENERATIVE COMPOSITING ALONE.
+      story_purpose: Many ordinary village lights form a readable path from Bellwood
+        toward the forest, collectively creating a route home.
+      review_findings:
+      - Approved aerial lacks the required clear forest-path junction.
+      - Visible streets do not naturally demonstrate continuous village-to-forest
+        rescue route.
+      - Roof/building occlusion interrupts square-to-street-to-forest connection.
+      - Procedural lights suggest illumination but cannot convincingly create missing
+        geography.
+      - Repeated tiny resident samples are insufficient for production-quality community
+        response.
+      - Further non-generative iterations risk fabricating geography rather than preserving
+        world continuity.
+      - Another procedural/composite iteration is not justified.
+      draft_status: REVIEW DRAFT — NOT APPROVED / NOT REGISTERED / NOT CANONICAL
+      drafts:
+      - 04_Images/Composites/13D/COMP_13D_PATH_OF_LIGHTS_review_v1.png
+      - 04_Images/Composites/13D/COMP_13D_PATH_OF_LIGHTS_review_v2.png
+      drafts_are_geography_authority: false
+      further_composite_iteration_authorized: false
+      generation_tool: Gemini — Nano Banana 2
+      reference_package:
+      - path: 04_Images/References/Environments/ENV_01_BELLWOOD_AERIAL_MASTER.jpeg
+        role: 'PRIMARY GEOGRAPHY / WORLD: Bellwood identity, mountain valley, architecture,
+          aerial geography, tower relationship and cinematic world style'
+      - path: 04_Images/Approved/PI_021_WORRIED_VILLAGERS_DARK_TOWER_v1.jpeg
+        role: 'SECONDARY STORM / COMMUNITY: wet materials, residents, ordinary lantern
+          context and dark Great Lantern chronology; Weather C transitions to D; no
+          tower-design override'
+      - path: 04_Images/Approved/PI_023_FIRST_VILLAGER_RAISES_LANTERN_v1.jpeg
+        role: 'SECONDARY ORDINARY LANTERN / FIRST RESPONSE: household lantern design,
+          natural amber flame, local illumination and community action'
+      prompt_source: 03_Storyboard/13_PRODUCTION_IMAGE_PROMPTS.md#shot-13d--method-escalated-generated-shot
+      budget:
+        initial_attempts: 1
+        automatic_retries: 0
+        attempt_2_authorized: false
+      generation_authorized: false
+      attempt_history:
+      - attempt: 1
+        result: PASS
+        generation_tool: Gemini — Nano Banana 2
+        human_approved: true
+      registered: true
+      proposed_approved_path: 04_Images/Approved/SHOT_13D_PATH_OF_LIGHTS_v1.<actual-downloaded-extension>
+      post_generation_policy: STOP → HUMAN REVIEW → DECIDE; second attempt requires
+        explicit approval, diagnosed failure and targeted correction.
+      method_escalation_result: SUCCESSFUL
+      approval_basis: |-
+        - Bellwood remains readable as a mountain village within the established dark evergreen valley.
+        - The generated composition successfully supplies the village-to-forest spatial relationship that the failed non-generative composite could not establish.
+        - A readable chain of villagers carrying individual warm lights progresses from the village streets toward and into the forest.
+        - Human silhouettes are visibly associated with the lantern lights.
+        - The route has bends, gaps and enough spacing variation to read as a human response rather than a magical continuous line.
+        - The collective effect comes from many small ordinary lights.
+        - Individual lights remain modest local amber sources against a predominantly cold/dark environment.
+        - Forest remains predominantly dark.
+        - Wet surfaces, rain and cold blue values preserve the weakening-storm continuity.
+        - No Maya or Lumi appears.
+        - No homecoming is depicted.
+        - The image clearly communicates the 13D story beat:
+          MANY SMALL LIGHTS → COLLECTIVE PATH TOWARD THE FOREST.
+      accepted_variations: |-
+        1. TOWER ARCHITECTURE
+        The tower architecture differs visibly from the canonical Great Lantern Tower and reads somewhat more like a traditional bell/church tower.
+
+        ACCEPT for this wide elevated 13D composition because:
+        - the tower remains a dark vertical village landmark,
+        - no illuminated Great Lantern contradicts chronology,
+        - the central story purpose is the community-created route,
+        - regenerating solely for distant architectural fidelity is not justified.
+
+        IMPORTANT:
+        This does NOT replace or redefine the canonical Great Lantern Tower.
+
+        Architectural authority remains:
+        04_Images/References/Environments/ENV_02_GREAT_LANTERN_TOWER_MASTER.jpeg
+
+        Future closer tower shots must continue to follow the canonical tower master.
+
+        2. LANTERN-CHAIN REGULARITY
+        The chain is somewhat more orderly than the ideal prompt target.
+
+        ACCEPT because:
+        - visible people accompany the lights,
+        - spacing varies,
+        - natural gaps exist,
+        - the route bends organically,
+        - individual pools remain distinguishable,
+        - it does not become a continuous magical glowing line.
+
+        Do not propagate increased regularity as a requirement for later shots.
+
+        3. VILLAGE GEOGRAPHY
+        The image clarifies geography that was not explicitly available in the original aerial master.
+
+        Treat this as SHOT-SPECIFIC GEOGRAPHIC CLARIFICATION.
+
+        Do NOT automatically redefine the canonical Bellwood master geography from this generated shot.
+
+        REFERENCE AUTHORITY remains:
+        canonical environment masters > shot-specific generated geography,
+        except when reproducing continuity specifically from shot 13D.
+      continuity_anchor_role: Principal production anchor for community-created path
+        of lights, many-small-lights motif, village-to-forest rescue direction and
+        Weather-D collective response. Optional secondary reference for PI_024/later
+        path-home shots; does not override canonical architecture or characters.
+      generation_lesson: 'Escalation succeeded on first controlled generation: SOURCE-PLATE
+        COMPOSITE → diagnostic failure due to missing geography → STOP → reference-controlled
+        generation → human review → production approval. This does not imply generation
+        is always preferable to compositing.'
+      first_attempt_success: true
+      canonical_production_asset:
+        path: 04_Images/Approved/SHOT_13D_PATH_OF_LIGHTS_v1.jpeg
+        format: JPEG
+        dimensions:
+          width: 1376
+          height: 768
+        aspect_ratio: '43:24'
+        aspect_ratio_decimal: 1.7916666666666667
+        final_framing_target: '16:9'
+        file_size_bytes: 738659
+        sha256: 045c921b06ec595f944098343836c74696bd817e2c51271b8e97f7d8f7085519
+      file_registration_note: Already at canonical destination; image readable and
+        unchanged; SHA-256 verified before/after registration. No move or conversion.
+      tower_authority: 04_Images/References/Environments/ENV_02_GREAT_LANTERN_TOWER_MASTER.jpeg
+      reference_authority: Canonical environment masters > shot-specific generated
+        geography, except when reproducing continuity specifically from 13D. Canonical
+        character references unchanged.
+      additional_generation_authorized: false
+  accounting_scope: Separate from original 28-composition production ledger. Increment
+    this record only after actual human generation. No independent global generator-attempt
+    counter existed; none added.
+  first_attempt_successes: 1
+workflow_improvements:
+  '010':
+    id: WORKFLOW IMPROVEMENT 010
+    lesson: When an edit/composite method cannot represent required story geography
+      because the source plate lacks necessary spatial information, stop after the
+      diagnostic draft. Escalate to reference-controlled generation rather than repeatedly
+      fabricating missing geography through compositing.
+    composite_first_scope: Useful when required geography exists in approved source
+      material.
+    reference_controlled_generation_scope: Justified when required spatial relationships
+      are fundamentally absent from source plates; not an automatic preference over
+      compositing.
+    validated_outcome: 'Escalation succeeded on first controlled generation: SOURCE-PLATE
+      COMPOSITE → diagnostic failure due to missing geography → STOP → reference-controlled
+      generation → human review → production approval. This does not imply generation
+      is always preferable to compositing.'
+production_learnings:
+  PI_025_DIRECTIONAL_ACTION_RECOVERY:
+    lesson: |-
+      Record this production lesson in the appropriate state/learning area without
+      altering historical approved documents unnecessarily:
+
+      For directional action shots, subject movement vector, eyeline and visible
+      destination must agree spatially. A visually strong image is insufficient when
+      the composition makes the character appear to move away from the intended
+      destination.
+
+      The successful repair pattern was:
+
+      diagnose spatial storytelling failure
+      → preserve successful identity/anatomy/style elements
+      → target only direction/geography
+      → regenerate once
+      → human review
+      → approve.
+    source: Human-reviewed PI_025 Attempt 1 failure / Attempt 2 approval
+method_escalated_generated_shot_14C:
+  escalation_id: 14C_METHOD_ESCALATION_001
+  shot_id: 14C
+  historical_classification: ROUGH_COMPOSITE
+  actual_implementation: CONTROLLED FULL-SHOT GENERATION
+  status: COMPLETE / PASS / APPROVED v1 / REGISTERED
+  planned: 1
+  approved: 1
+  attempts: 1
+  first_attempt_successes: 1
+  accounting_scope: Separate 14C escalation only; original PI ledger and existing
+    13D escalation accounting unchanged.
+  timing:
+    start: '03:48'
+    end: '03:53'
+    duration_seconds: 5
+  priority: HERO
+  difficulty: VERY_HIGH
+  reason: Existing sources lack reciprocal arrival/reception poses; cropping running
+    Maya cannot create reception. Generating a coherent full scene avoids incompatible
+    pose/perspective/eyeline integration.
+  generator: Gemini — Nano Banana 2
+  reference_package:
+  - path: 02_Character_Bible/References/Maya/maya_master_3quarter.jpeg
+    role: Canonical Maya identity, age, proportions and costume; not dry state or
+      standing pose
+  - path: 02_Character_Bible/References/Lumi/lumi_master_3quarter.jpg
+    role: Canonical Lumi construction; scale explicitly approximately 18cm against
+      140cm Maya
+  - path: 04_Images/References/Environments/ENV_06_VILLAGE_SQUARE_MASTER.jpeg
+    role: Canonical Bellwood arrival setting; not lit Great Lantern or dry weather
+  - path: 04_Images/Approved/PI_021_WORRIED_VILLAGERS_DARK_TOWER_v1.jpeg
+    role: Secondary residents, clothing and population continuity; not frozen anxious
+      poses, peak Weather C or accepted tower variation
+  staging: Stopped Maya, one adult lowering/stepping toward her with open separated
+    hands; reciprocal response; no required contact/hug/handover.
+  state: STATE 3 soaked/muddy Maya; Weather D weakening rain
+  budget:
+    initial_attempts: 1
+    automatic_retries: 0
+    attempt_2_authorized: false
+  human_generation_attempt_1_authorized: false
+  automatic_generation_authorized: false
+  attempt_history:
+  - attempt: 1
+    result: PASS
+    tool: Gemini — Nano Banana 2
+    human_approved: true
+  registered: true
+  prompt_source: 03_Storyboard/13_PRODUCTION_IMAGE_PROMPTS.md#shot-14c--method-escalated-generated-shot
+  review_gate:
+  - Maya identity/ten-year age/costume
+  - State-3 soaked/muddy continuity
+  - Stopped arrival, not running
+  - Reciprocal Maya/adult eyelines and receiving gesture
+  - Relief/concern without celebration
+  - Plausible foreground anatomy and ground contact
+  - One small canonical Lumi with plausible grip/handle/gravity
+  - Great Lantern dark if visible; canonical architecture
+  - Weather D rain and wet environment
+  - Bellwood identity
+  - Restrained ordinary lanterns and tiny Lumi light
+  - Clear hierarchy/storybook style/motion separation/16:9 safety
+  - No modern objects/text/duplicates
+  post_generation_policy: STOP → HUMAN REVIEW → DECIDE; Attempt 2 needs explicit approval,
+    diagnosed failure and targeted correction.
+  proposed_approved_path: 04_Images/Approved/SHOT_14C_VILLAGERS_RECEIVE_MAYA_v1.<actual-downloaded-extension>
+  approval_basis: |-
+    - canonical Maya identity sufficiently preserved
+    - approximately ten-year-old child proportions
+    - soaked/muddy State 3 continuity retained
+    - Maya has reached the village and stopped
+    - reciprocal reception clearly readable
+    - receiving adult uses welcoming open-hand/body gesture
+    - Maya and receiver look/respond toward each other
+    - relief/concern rather than celebration
+    - exactly one small Lumi
+    - plausible carrying grip/handle/gravity
+    - tiny restrained natural flame
+    - wet Bellwood square
+    - Weather D / continuing reduced rain
+    - Great Lantern remains extinguished/not visibly relit
+    - ordinary Bellwood practical warmth acceptable
+    - cinematic 3D storybook style
+    - 16:9 production composition
+  accepted_variations: |-
+    - receiving woman need not be a previously named canonical character
+    - background crowd arrangement may differ from PI_021
+    - minor Lumi construction/weathering variation within identity tolerance
+    - background tower architecture need not exactly reproduce ENV_02 provided it does not redefine canonical tower design
+    - minor clothing, mud, rain, facial-detail, architecture and reflection differences
+    - warm windows/practicals are ordinary Bellwood illumination and do not represent the Great Lantern relighting
+  continuity_authority: |-
+    14C becomes the principal production anchor for:
+    ARRIVAL → STOP → RECIPROCAL HUMAN RECEPTION.
+
+    It must NOT redefine:
+    - canonical Maya identity
+    - canonical Lumi identity
+    - canonical Bellwood/tower architecture
+    - the Great Lantern design
+
+    Beat separation remains:
+    14A = Maya recognises home
+    14B = Maya runs toward Bellwood
+    14C = villagers receive Maya
+    15A = storm clearing
+    15B = Great Lantern relit
+  method_escalation_result: SUCCESSFUL — Attempt 1; historical ROUGH_COMPOSITE retained,
+    coordinated reception poses absent from existing sources; explicitly approved
+    full-shot generation.
+  canonical_production_asset:
+    path: 04_Images/Approved/SHOT_14C_VILLAGERS_RECEIVE_MAYA_v1.jpeg
+    format: JPEG
+    dimensions:
+      width: 1376
+      height: 768
+    aspect_ratio: '43:24'
+    aspect_ratio_decimal: 1.7916666666666667
+    final_framing_target: '16:9'
+    file_size_bytes: 721970
+    sha256: 89e38d78ca20c2e1726a380e1aad07d80036b4b0170d5e4647f35436146e312d
+  source_identification: Only matching canonical reception image; inspected scene
+    agrees with human description, JPEG contains Google metadata and Chrome download
+    quarantine. Other Gemini download inspected is previous running image, not 14C.
+    No alternate ChatGPT output used.
+  file_registration_note: Already at canonical destination; no move, conversion or
+    image-byte modification; SHA-256 verified before/after registration.
+  additional_generation_authorized: false
+
+'08AB_REPAIR':
+  status: COMPLETE / MASTER AND EDITORIAL TREATMENT APPROVED
+  registration_status: SHARED MASTER APPROVED / REGISTERED
+  planned_generated_masters: 1
+  approved: 1
+  attempts: 1
+  first_attempt_approvals: 1
+  asset_id: SHOT_08AB_BELLWOOD_STORM_LIT_MASTER_v1
+  registered: true
+  generation_tool: Gemini — Nano Banana 2
+  attempt_history:
+  - attempt: 1
+    result: PASS / APPROVED v1
+    human_approved: true
+  primary_coverage: '08A'
+  shared_transition_coverage: '08B'
+  canonical_production_asset:
+    path: 04_Images/Approved/SHOT_08AB_BELLWOOD_STORM_LIT_MASTER_v1.jpeg
+    format: JPEG
+    dimensions:
+      width: 1376
+      height: 768
+    aspect_ratio: '43:24'
+    aspect_ratio_decimal: 1.7916666666666667
+    final_framing_target: '16:9'
+    file_size_bytes: 772870
+    sha256: 16c9a53c4060795406d1052e696bb0c0e4a4df834b4dda79419668aab9064ea2
+  approval_basis:
+  - grounded forest-side viewpoint
+  - plausible valley depth
+  - Bellwood visibly distant through Weather-C rain
+  - strong foreground-tree framing
+  - recognisable Bellwood visual language
+  - stone Great Lantern tower rather than church/bell-tower substitution
+  - Great Lantern visibly lit and readable as the important distant navigation point
+  - restrained natural beacon rather than magical illumination
+  - subdued competing village lights
+  - heavy storm atmosphere while retaining enough visibility for the story beat
+  - coherent foreground → valley → Bellwood perspective
+  - no Maya
+  - no Lumi
+  - no premature protection, near-extinction, rescue or arrival beat
+  - suitable shared geometry for the 08A → 08B extinction transition
+  - cinematic 3D storybook continuity
+  - safe 16:9 production composition
+  accepted_variations:
+  - Minor distant Bellwood architecture/geography differences accepted for this distant
+    storm composition; do not redefine canonical Bellwood geography.
+  - ENV_01 remains authoritative for Bellwood; ENV_02 remains authoritative for Great
+    Lantern Tower design.
+  - Fine distant roof/window/masonry differences accepted.
+  - Exact rain streaks, haze, cloud contours, foreground branches, rocks and wet-ground
+    textures accepted.
+  - Small differences in subdued village window-light placement accepted.
+  - Exact flame shape inside the Great Lantern enclosure accepted.
+  - Current storm visibility intentionally permits the audience to perceive the beacon
+    before it disappears.
+  continuity_rule: 'PRE-EXTINCTION state: Great Lantern still lit. Do not use this
+    still alone as completed post-extinction coverage. 08B requires brief lightning
+    pulse → local Great Lantern flame extinction → removal/reduction of associated
+    local warm spill → return to cold storm values → continuing rain / reduced navigational
+    visibility. 08C remains subsequent darkness/loss-of-Bellwood beat.'
+  readiness:
+    '08A': READY_DIRECT
+    '08B':
+      status: READY_EDIT_EFFECT
+      human_approved: true
+      condition: Lightning/extinction editorial treatment approved by human review.
+      ready_edit_effect: true
+    '08C': UNCHANGED
+  canonical_authorities:
+    Bellwood: 04_Images/References/Environments/ENV_01_BELLWOOD_AERIAL_MASTER.jpeg
+    Great_Lantern_Tower: 04_Images/References/Environments/ENV_02_GREAT_LANTERN_TOWER_MASTER.jpeg
+    storm: 04_Images/References/Environments/ENV_05_FOREST_PATH_STORM_MASTER.jpeg
+  file_registration_note: Already at canonical destination; no move, rewrite, conversion,
+    recompression or image-pixel modification. SHA-256 verified before and after registration.
+  additional_generation_authorized: false
+  derivative_created: true
+  animation_planning_status: NOT STARTED
+  animation_readiness_gate: NOT YET FULLY CLEARED
+  editorial_treatment:
+    status: PASS / APPROVED v1 / REGISTERED
+    human_review_decision: approved
+    method: Non-generative local editorial extinction and single cold lightning exposure
+      pulse
+    source_master_sha256: 16c9a53c4060795406d1052e696bb0c0e4a4df834b4dda79419668aab9064ea2
+    assets:
+      '08B_PRE_EXTINCTION_REFERENCE.png':
+        path: 04_Images/Editorial_Prep/08B_extinction_v1/08B_PRE_EXTINCTION_REFERENCE.png
+        file_size_bytes: 2131324
+        sha256: cdf4b190400d29bd4735985756668b5211b4c9f6b68457dc4220ee019d5f0bda
+      '08B_POST_EXTINCTION_v1.png':
+        path: 04_Images/Editorial_Prep/08B_extinction_v1/08B_POST_EXTINCTION_v1.png
+        file_size_bytes: 2130032
+        sha256: 520f64f7c9dd9ec1af335a3456e9e565bae7cf8207aed211c6f1319d2134e58a
+      '08B_EXTINCTION_PREVIEW_v1.mp4':
+        path: 04_Images/Editorial_Prep/08B_extinction_v1/08B_EXTINCTION_PREVIEW_v1.mp4
+        file_size_bytes: 4358889
+        sha256: 83e011793dda9907d0107776d90ab7da7dcaa21ead68248a9f437bc72d7e248a
+      '08B_EXTINCTION_BUILD_NOTES.md':
+        path: 04_Images/Editorial_Prep/08B_extinction_v1/08B_EXTINCTION_BUILD_NOTES.md
+        file_size_bytes: 4762
+        sha256: 3cae537cf481044d0988c2594e7921d79ede13b80b293ccf1b1c693e7b4604ea
+      build_08B_extinction_v1.swift:
+        path: 04_Images/Editorial_Prep/08B_extinction_v1/build_08B_extinction_v1.swift
+        file_size_bytes: 5535
+        sha256: 80515a90bea521f08c580cb2235dc2afbf7cab2b4d0bde6532300e4450aaf96a
+    native_still_dimensions:
+      width: 1376
+      height: 768
+    preview:
+      width: 1920
+      height: 1080
+      fps: 24
+      frames: 96
+      duration_seconds: 4.0
+      audio_tracks: 0
+      role: Human-approved editorial review preview; not AI-generated animation
+    limitations:
+    - Static source rain and fixed camera
+    - Unlit glass reconstructed from source-local material; accepted through human
+      review
+    generation_attempts_added: 0
+    other_shot_conditions_approved: false
+
+final_55_shot_production_image_readiness:
+  status: COMPLETE / PASS
+  report: 04_Images/Editorial_Prep/final_55_shot_readiness/FINAL_55_SHOT_READINESS_AUDIT.md
+  shot_count: 55
+  runtime_seconds: 275
+  gate: PASS
+  production_image_stage: COMPLETE / PASS
+  blocking_still_count: 0
+  blocking_continuity_count: 0
+  readiness_counts:
+    CONDITIONAL_NONBLOCKING: 11
+    READY_DIRECT: 12
+    READY_EDIT_EFFECT: 11
+    READY_DERIVATIVE: 2
+    READY_ANIMATION: 19
+  animation_risk_counts:
+    LOW: 15
+    MEDIUM: 22
+    HIGH: 18
+  animation_planning_status: READY TO BEGIN / NOT STARTED
+  further_image_generation_authorized: false
+  shot_readiness:
+    01A: CONDITIONAL_NONBLOCKING
+    01B: READY_DIRECT
+    02A: READY_EDIT_EFFECT
+    02B: READY_EDIT_EFFECT
+    03A: CONDITIONAL_NONBLOCKING
+    03B: READY_DIRECT
+    03C: READY_DERIVATIVE
+    04A: READY_DIRECT
+    04B: READY_EDIT_EFFECT
+    04C: CONDITIONAL_NONBLOCKING
+    05A: READY_ANIMATION
+    05B: READY_ANIMATION
+    05C: CONDITIONAL_NONBLOCKING
+    05D: READY_ANIMATION
+    06A: READY_DERIVATIVE
+    06B: READY_ANIMATION
+    06C: READY_ANIMATION
+    06D: READY_ANIMATION
+    06E: READY_EDIT_EFFECT
+    07A: READY_EDIT_EFFECT
+    07B: READY_ANIMATION
+    07C: READY_ANIMATION
+    07D: READY_DIRECT
+    '08A': READY_DIRECT
+    '08B': READY_EDIT_EFFECT
+    '08C': READY_ANIMATION
+    '09A': READY_DIRECT
+    '09B': READY_EDIT_EFFECT
+    '09C': READY_ANIMATION
+    '09D': READY_ANIMATION
+    10A: READY_EDIT_EFFECT
+    10B: READY_DIRECT
+    10C: CONDITIONAL_NONBLOCKING
+    11A: READY_DIRECT
+    11B: READY_ANIMATION
+    11C: CONDITIONAL_NONBLOCKING
+    11D: READY_ANIMATION
+    12A: READY_DIRECT
+    12B: READY_ANIMATION
+    12C: CONDITIONAL_NONBLOCKING
+    12D: CONDITIONAL_NONBLOCKING
+    13A: READY_ANIMATION
+    13B: CONDITIONAL_NONBLOCKING
+    13C: CONDITIONAL_NONBLOCKING
+    13D: READY_DIRECT
+    14A: READY_ANIMATION
+    14B: READY_ANIMATION
+    14C: READY_ANIMATION
+    15A: READY_EDIT_EFFECT
+    15B: READY_EDIT_EFFECT
+    15C: READY_DIRECT
+    16A: READY_ANIMATION
+    16B: READY_DIRECT
+    16C: CONDITIONAL_NONBLOCKING
+    17A: READY_EDIT_EFFECT
+
+animation_planning_v1:
+  stage: 10A
+  status: v1 COMPLETE / APPROVED FOR CALIBRATION PREPARATION
+  path: 05_Video_Clips/Planning/ANIMATION_PLAN_v1.md
+  shot_count: 55
+  runtime_seconds: 275
+  implementation_class_counts:
+    A: 15
+    B: 22
+    D: 6
+    C: 8
+    E: 2
+    F: 2
+  ai_decision_counts:
+    EDITORIAL_ONLY: 37
+    AI_REQUIRED: 8
+    AI_OPTIONAL: 10
+  required_ai_clips: 8
+  required_usable_generated_seconds: 19
+  optional_ai_clips: 10
+  optional_usable_generated_seconds: 20
+  all_candidates_unique_clips: 18
+  all_candidates_usable_seconds: 39
+  primary_calibration: '08C'
+  secondary_calibration: 06B
+  required_plus_primary_test_unique_clips: 9
+  required_plus_primary_test_usable_seconds: 21
+  generation_seconds_basis: Usable motion targets; actual requested/downloaded/billed
+    seconds unknown until tool selection.
+  tool_selection_status: REQUIRES CURRENT HUMAN/CHATGPT TOOL REVIEW
+  final_video_generation_tool: NOT SELECTED
+  animation_generation_status: NOT STARTED
+  calibration_status: NOT STARTED
+  generation_authorized: false
+  budget_policy:
+    initial_attempts_per_candidate: 1
+    automatic_retries: 0
+    status: PROPOSED ONLY — individual explicit authorization required
+    after_attempt: STOP → HUMAN REVIEW → DECIDE
+  shot_implementation_classes:
+    01A: A
+    01B: A
+    02A: B
+    02B: B
+    03A: B
+    03B: A
+    03C: A
+    04A: A
+    04B: A
+    04C: B
+    05A: D
+    05B: C
+    05C: E
+    05D: C
+    06A: A
+    06B: D
+    06C: D
+    06D: B
+    06E: B
+    07A: B
+    07B: C
+    07C: B
+    07D: A
+    '08A': A
+    '08B': B
+    '08C': C
+    '09A': B
+    '09B': B
+    '09C': F
+    '09D': C
+    10A: B
+    10B: B
+    10C: B
+    11A: B
+    11B: D
+    11C: B
+    11D: D
+    12A: A
+    12B: C
+    12C: B
+    12D: F
+    13A: C
+    13B: B
+    13C: B
+    13D: A
+    14A: C
+    14B: E
+    14C: A
+    15A: B
+    15B: B
+    15C: A
+    16A: D
+    16B: B
+    16C: A
+    17A: A
+
+calibration_08C_kling_v1:
+  stage: 10B
+  test_id: CALIBRATION_08C_KLING_TEST_1
+  status: '08C / KLING / ATTEMPT 1 PREPARED / AWAITING HUMAN GENERATION'
+  preparation_document: 05_Video_Clips/Planning/CALIBRATION_08C_KLING_v1.md
+  source_asset:
+    path: 04_Images/Approved/PI_013_MAYA_LOSES_BELLWOOD_v1.jpeg
+    role: approved_production_image_foundation_for_08C
+    status: approved_v1
+    format: JPEG
+    dimensions:
+      width: 1376
+      height: 768
+    aspect_ratio: '43:24'
+    aspect_ratio_decimal: 1.7916666666666667
+    aspect_ratio_display: 43:24 approximately 1.792:1
+    final_framing_target: '16:9'
+    file_size_bytes: 638133
+    sha256: 8bd45b16e800ad3054a6c5149bb18bb3f64b6a5c85e6270478e6ddd247b45aeb
+    color_space: RGB
+  tool_for_calibration: Kling AI — human-operated current web image-to-video workflow
+  model_version: TO BE RECORDED FROM CURRENT UI
+  generated_duration_seconds: 
+  expected_usable_seconds: 2
+  locked_shot_seconds: 4
+  generation_budget:
+    initial_attempts: 1
+    automatic_retries: 0
+    attempt_2_authorized: false
+  authorization:
+    scope: '08C Kling Attempt 1 ONLY'
+    operator: HUMAN MANUAL ONLY
+    human_generation_authorized: true
+    codex_generation_authorized: false
+    other_clips_authorized: false
+    automatic_model_or_tool_switch_authorized: false
+  actual_generation_attempts: 0
+  approved_clips: 0
+  animation_generation_status: NOT STARTED
+  test_2_status: NOT STARTED
+  final_production_video_tool: NOT SELECTED
+  proposed_output: 05_Video_Clips/Approved/SHOT_08C_KLING_CALIBRATION_v1.<actual-format>
+  after_attempt: STOP → HUMAN REVIEW → DECIDE

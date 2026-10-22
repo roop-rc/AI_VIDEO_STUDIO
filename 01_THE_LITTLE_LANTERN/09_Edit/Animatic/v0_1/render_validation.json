@@ -1,0 +1,12 @@
+{
+  "audio_track_count" : 1,
+  "bytes" : 61666156,
+  "duration_seconds" : 275,
+  "fps" : 24,
+  "height" : 1080,
+  "shot_slots" : 55,
+  "status" : "passed",
+  "video_sample_count" : 6600,
+  "voice_clips" : 32,
+  "width" : 1920
+}
